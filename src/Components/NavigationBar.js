@@ -39,7 +39,7 @@ const NavigationBar = () => {
       <div className="navbar-links-container">
         <a href="">Home</a>
         <a href="">Portfolios</a>
-        <button className="primary-button">Contact</button>
+        <a href="">Contact</a>
       </div>
 
       <div className="navbar-menu-container">

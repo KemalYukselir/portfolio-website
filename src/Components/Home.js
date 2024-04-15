@@ -5,6 +5,8 @@ const Home = () => {
   return (
     <div className='home-container'>
       <Navigation />
+      <div className="backgroundImage">
+      </div>
     </div>
   )
 }

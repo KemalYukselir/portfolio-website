@@ -1,23 +1,21 @@
-import React from 'react'
-import PlaceholderImage from "../Assets/placeHolderImage.jpg"
-import MafiaGameImg from "../Assets/mafiaGameImg.png"
+import React from 'react';
 
-const Portfolios = () => {
+const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPlaceHolder }) => {
   return (
     <div>
         <div className='portfolio-section'>
           <div className='img-wrapper'>
-            <img src={MafiaGameImg} alt="Placeholder Image"/>
+            <img src={imgPlaceHolder} alt="Placeholder"/>
           </div>
           <div className='text-wrapper'>
-              <h1>Project Name:</h1> <p>Mafia Game</p>
-              <h1>Game Stack:</h1> <p>....</p>
-              <h1>GitHub:</h1> <p>[Private]</p>
-              <h1>Deployment:</h1> <p>....</p>
+              <h1>Project Name:</h1> <p>{projectName}</p>
+              <h1>Game Stack:</h1> <p>{gameStack}</p>
+              <h1>GitHub:</h1> <p>{githubLink}</p>
+              <h1>Deployment:</h1> <a href={deploymentLink} target="_blank" rel="noreferrer">{deploymentLink}</a>
           </div>
         </div>
     </div>
   )
 }
 
-export default Portfolios
+export default Portfolios;

@@ -72,6 +72,10 @@ nav {
   font-size: 20px;
 }
 
+
+
+
+
 .portfolio-section {
   flex: 1;
   display: flex;
@@ -80,16 +84,14 @@ nav {
   align-items: center; 
   text-align: center; 
   min-height: 70vh; 
+  margin-bottom: 10%;
 }
 
 .portfolio-section img {
   display: block;
-  width: 550px; 
-  height: 600px; 
 }
 
 .img-wrapper {
-  margin-right: 5%;
   /* border: 5px solid #000000; */
   border-radius: 20px;
   overflow: hidden; 

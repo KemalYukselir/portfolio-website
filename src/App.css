@@ -75,6 +75,29 @@ nav {
   font-size: 20px;
 }
 
+.portfolio-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  min-height: 70vh; 
+}
+
+.portfolio-section img {
+  margin-right: 60%;
+}
+
+.portfolio-section h1 {
+  margin-left: 20%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 @media (max-width: 900px) {
   .navbar-menu-container {
     display: flex;

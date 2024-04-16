@@ -3,6 +3,8 @@ import Home from './Components/Home';
 import Portfolios from './Components/Portfolios';
 import MafiaGameImg from "./Assets/mafiaGameImg.png";
 import groupProjectImg from "./Assets/groupDissImg.png";
+import escapeTheGhostsGame from "./Assets/escapeTheGhostsGame.png";
+import placeHolderImage from "./Assets/placeHolderImage.jpg";
 
 
 function App() {
@@ -21,9 +23,27 @@ function App() {
       <Portfolios
         projectName="CyberTrace - Digital Forensics Game (Final Year Project)"
         gameStack="HTML/CSS/JS, Java, Springboot, MySQL"
-        githubLink="[Private]"
+        githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
         deploymentLink = {null}
         imgPlaceHolder= {groupProjectImg}
+        imgWidth = "1300px"
+        imgHeight = "450px"
+      />
+      <Portfolios
+        projectName="Escape The Ghosts"
+        gameStack="Unity, C#"
+        githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
+        deploymentLink = {null}
+        imgPlaceHolder= {escapeTheGhostsGame}
+        imgWidth = "1300px"
+        imgHeight = "450px"
+      />
+      <Portfolios
+        projectName="Smart Plant Pot"
+        gameStack="Arduino, C++"
+        githubLink="https://github.com/KemalYukselir/Smart-Plant-Pot"
+        deploymentLink = {null}
+        imgPlaceHolder= {placeHolderImage}
         imgWidth = "1300px"
         imgHeight = "450px"
       />

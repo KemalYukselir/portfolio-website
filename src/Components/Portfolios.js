@@ -1,15 +1,20 @@
 import React from 'react'
-import placeholderImage from "../Assets/placeHolderImage.jpg"
+import PlaceholderImage from "../Assets/placeHolderImage.jpg"
+import MafiaGameImg from "../Assets/mafiaGameImg.png"
 
 const Portfolios = () => {
   return (
     <div>
         <div className='portfolio-section'>
-            <img src={placeholderImage} alt="Placeholder Image"/>
-            <h1>Project Name: Mafia Game</h1>
-            <h1>Game Stack: ....</h1>
-            <h1>GitHub: [Private]</h1>
-            <h1>Deployment: ....</h1>
+          <div className='img-wrapper'>
+            <img src={MafiaGameImg} alt="Placeholder Image"/>
+          </div>
+          <div className='text-wrapper'>
+              <h1>Project Name:</h1> <p>Mafia Game</p>
+              <h1>Game Stack:</h1> <p>....</p>
+              <h1>GitHub:</h1> <p>[Private]</p>
+              <h1>Deployment:</h1> <p>....</p>
+          </div>
         </div>
     </div>
   )

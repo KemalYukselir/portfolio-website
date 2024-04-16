@@ -1,8 +1,6 @@
 * {
   font-family: "Reem Kufi", sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 img {
   max-width: 100%;
@@ -15,7 +13,6 @@ img {
   margin: 0rem auto;
 }
 body {
-  overflow-x: hidden;
   /* background-color: #f6f6f6; */
   background-image: url('Assets/backgroundImage.jpg');
   background-size: cover;
@@ -75,10 +72,13 @@ nav {
   font-size: 20px;
 }
 
+
+
+
 .portfolio-section {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center; 
   text-align: center; 
@@ -86,18 +86,40 @@ nav {
 }
 
 .portfolio-section img {
-  margin-right: 60%;
+  display: block;
+  width: 550px; 
+  height: 600px; 
 }
 
-.portfolio-section h1 {
-  margin-left: 20%;
+.img-wrapper {
+  margin-right: 5%;
+  /* border: 5px solid #000000; */
+  border-radius: 20px;
+  overflow: hidden; 
+  box-sizing: border-box; 
+  padding: 0; 
+  box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5); /* Add drop shadow */
 }
 
-.text-container {
+.text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin-right: 15%;
+  margin-left: 10%;
+  text-align: center; /* Center the text */
 }
+
+.text-wrapper h1 {
+  margin-bottom: 10%;
+  font-size: 260%;
+  color: beige;
+}
+
+.text-wrapper p {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .navbar-menu-container {
     display: flex;

@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPlaceHolder, imgWidth, imgHeight, flip }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex(prevIndex => (prevIndex + 1) % imgPlaceHolder.length);
+  };
+
+  const previousImage = () => {
+    setCurrentImageIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : imgPlaceHolder.length - 1));
+  };
+
   return (
     <div>
       { flip ? 
@@ -8,12 +18,12 @@ const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPla
           <div className='portfolio-section'>
             <div className='img-container'>
               <div className="button-container">
-                <button>{"<"}</button>
-                <button>{">"}</button>
+                <button className='previous-image' onClick={previousImage}>{"<"}</button>
+                <button className='next-image' onClick={nextImage}>{">"}</button>
               </div>
               <div className='img-wrapper'>
-              {/* Image */}
-              <img src={imgPlaceHolder} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }}/>
+                {/* Image */}
+                <img src={imgPlaceHolder[currentImageIndex]} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }}/>
               </div>
             </div>
 
@@ -50,12 +60,12 @@ const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPla
             </div>
             <div className='img-container'>
               <div className="button-container">
-                <button>{"<"}</button>
-                <button>{">"}</button>
+                <button className='previous-image' onClick={previousImage}>{"<"}</button>
+                <button className='next-image' onClick={nextImage}>{">"}</button>
               </div>
               <div className='img-wrapper'>
-              {/* Image */}
-              <img src={imgPlaceHolder} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }}/>
+                {/* Image */}
+                <img src={imgPlaceHolder[currentImageIndex]} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }}/>
               </div>
             </div>
           </div>

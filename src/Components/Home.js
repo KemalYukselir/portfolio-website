@@ -16,6 +16,9 @@ const Home = () => {
             Check out my contact information section to access my LinkedIn, etc.
           </p>
           <p id="primary-text">
+            Feel free to scroll through the project images with the buttons above it. <br/>
+          </p>
+          <p id="primary-text">
             This website was made with react.{<FaReact/>}<a href="https://github.com/KemalYukselir/portfolio-website" target="_blank" rel="noreferrer">[Github link]</a> 
           </p>
       </div>

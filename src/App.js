@@ -7,8 +7,6 @@ import MafiaGameImg from "./Assets/mafiaGameImg.png";
 import groupProjectImg from "./Assets/groupDissImg.png";
 import escapeTheGhostsGame from "./Assets/escapeTheGhostsGame.png";
 import plantPotImg from "./Assets/plantPotImg.jpg";
-import placeHolderImage from "./Assets/placeHolderImage.jpg";
-
 
 function App() {
   return (

@@ -78,6 +78,9 @@ nav {
   font-size: 20px;
   color: beige;
 }
+.home-section p {
+  margin-top: 3%;
+}
 
 .portfolio-section {
   flex: 1;

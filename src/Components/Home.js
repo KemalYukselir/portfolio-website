@@ -1,5 +1,7 @@
 import React from 'react'
 import Navigation from './NavigationBar'
+import { FaReact } from "react-icons/fa";
+
 
 const Home = () => {
   return (
@@ -12,6 +14,9 @@ const Home = () => {
           <p id="primary-text">
             Welcome to my portfolio, which consists of projects I have completed or I'm working on. <br/>
             Check out my contact information section to access my LinkedIn, etc.
+          </p>
+          <p id="primary-text">
+            This website was made with react.{<FaReact/>}<a href="https://github.com/KemalYukselir/portfolio-website" target="_blank" rel="noreferrer">[Github link]</a> 
           </p>
       </div>
     </div>

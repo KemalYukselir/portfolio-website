@@ -15,22 +15,6 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 const NavigationBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const navBarOptions = [
-    {
-      text: "Home",
-      icon: <HomeIcon/>
-    },
-    {
-      text: "Portfolios",
-      icon: <InfoIcon/>
-    },
-    {
-      text: "Contact",
-      icon: <PhoneRoundedIcon/>
-    },
-  ]
-
-  
   const handleHomeClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 100);
   };
@@ -40,6 +24,26 @@ const NavigationBar = () => {
   const handlePortfoliosClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 6);
   };
+
+  const navBarOptions = [
+    {
+      text: "Home",
+      icon: <HomeIcon/>,
+      onClick: handleHomeClick
+    },
+    {
+      text: "Portfolios",
+      icon: <InfoIcon/>,
+      onClick: handlePortfoliosClick
+    },
+    {
+      text: "Contact",
+      icon: <PhoneRoundedIcon/>,
+      onClick: handleContactClick
+    },
+  ]
+
+
   return (
     <nav>
       {/* <div className="nav-logo-container">
@@ -66,7 +70,7 @@ const NavigationBar = () => {
           <List>
             {navBarOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={item.onClick}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>

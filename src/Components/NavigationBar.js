@@ -30,6 +30,15 @@ const NavigationBar = () => {
       icon: <PhoneRoundedIcon/>
     },
   ]
+  const handleHomeClick = () => {
+    window.scrollTo(0, document.body.scrollHeight / 100);
+  };
+  const handleContactClick = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
+  const handlePortfoliosClick = () => {
+    window.scrollTo(0, document.body.scrollHeight / 6);
+  };
   return (
     <nav>
       <div className="nav-logo-container">
@@ -37,9 +46,9 @@ const NavigationBar = () => {
       </div>
 
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">Portfolios</a>
-        <a href="">Contact</a>
+      <a href="#home" onClick={handleHomeClick}>Home</a>
+        <a href="#portfolios" onClick={handlePortfoliosClick}>Portfolios</a>
+        <a href="#contact" onClick={handleContactClick}>Contact</a>
       </div>
 
       <div className="navbar-menu-container">

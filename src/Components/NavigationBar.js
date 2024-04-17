@@ -30,6 +30,8 @@ const NavigationBar = () => {
       icon: <PhoneRoundedIcon/>
     },
   ]
+
+  
   const handleHomeClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 100);
   };
@@ -41,12 +43,12 @@ const NavigationBar = () => {
   };
   return (
     <nav>
-      <div className="nav-logo-container">
+      {/* <div className="nav-logo-container">
         <img src={logo192} alt="React Logo" />
-      </div>
+      </div> */}
 
       <div className="navbar-links-container">
-      <a href="#home" onClick={handleHomeClick}>Home</a>
+        <a href="#home" onClick={handleHomeClick}>Home</a>
         <a href="#portfolios" onClick={handlePortfoliosClick}>Portfolios</a>
         <a href="#contact" onClick={handleContactClick}>Contact</a>
       </div>

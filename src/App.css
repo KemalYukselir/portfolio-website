@@ -94,7 +94,15 @@ nav {
   box-sizing: border-box; 
   padding: 0; 
   box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
+.img-wrapper:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
 
 .text-wrapper {
   display: flex;

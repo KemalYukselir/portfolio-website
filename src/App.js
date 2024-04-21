@@ -34,8 +34,8 @@ function App() {
         githubLink={null}
         deploymentLink="https://themafiagame.netlify.app/"
         imgPlaceHolder= {[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
-        imgWidth = "550px"
-        imgHeight = "600px"
+        imgWidth = "350px"
+        imgHeight = "400px"
       />
       <Portfolios
         projectName="Escape The Ghosts"
@@ -43,8 +43,8 @@ function App() {
         githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
         deploymentLink = {null}
         imgPlaceHolder= {[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
-        imgWidth = "1300px"
-        imgHeight = "450px"
+        imgWidth = "350px"
+        imgHeight = "400px"
         flip={true}
       />
       <Portfolios
@@ -53,17 +53,17 @@ function App() {
         githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
         deploymentLink = {null}
         imgPlaceHolder= {[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
-        imgWidth = "200%"
-        imgHeight = "360px"
+        imgWidth = "450px"
+        imgHeight = "400px"
       />
       <Portfolios
         projectName="Smart Plant Pot"
         gameStack="Arduino, C++"
         githubLink="https://github.com/KemalYukselir/Smart-Plant-Pot"
-        deploymentLink = {null}
+        deploymentLink = "https://www.youtube.com/watch?v=2mXiLEbZyAU&ab_channel=Kemal"
         imgPlaceHolder= {[plantPot1, plantPot2, plantPot3, plantPot4]}
-        imgWidth = "500px"
-        imgHeight = "600px"
+        imgWidth = "359px"
+        imgHeight = "450px"
         flip={true}
       />
       <ContactPage/>

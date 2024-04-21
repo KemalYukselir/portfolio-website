@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { HiOutlineArrowRight} from "react-icons/hi";
+
+
 
 const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPlaceHolder, imgWidth, imgHeight, flip }) => {
   // Check if the viewport width is less than or equal to 600px
@@ -47,7 +50,8 @@ const handleMediaQueryChange = (mediaQueryList) => {
               <h1>Game Stack:</h1> <p>{gameStack}</p>
               {githubLink != null ? (
                 <>
-                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">{githubLink}</a>
+                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">Click me
+                  <HiOutlineArrowRight style={{marginLeft: '5%' }}/></a>
                 </>
               ) : (
                 <>
@@ -56,11 +60,12 @@ const handleMediaQueryChange = (mediaQueryList) => {
 
               {deploymentLink != null ? (
                 <>
-                  <h1>Deployment:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">{deploymentLink}</a>
+                  <h1>Deployment or Video:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">Click me
+                  <HiOutlineArrowRight style={{marginLeft: '5%' }}/></a>
                 </>
               ) : (
                 <>
-                  <h1>Deployment:</h1> <p>No Deployment</p>
+                  <h1>Deployment or Video:</h1> <p>[Private]</p>
                 </>)}
             </div>
           </div>
@@ -72,18 +77,21 @@ const handleMediaQueryChange = (mediaQueryList) => {
               <h1>Game Stack:</h1> <p>{gameStack}</p>
               {githubLink != null ? (
                 <>
-                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">{githubLink}</a>
+                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">Click me
+                  <HiOutlineArrowRight style={{marginLeft: '5%' }}/></a>
                 </>
               ) : (
                 <>
                   <h1>GitHub:</h1> <p>[Private]</p>
-                </>)}              {deploymentLink != null ? (
+                </>)}              
+                {deploymentLink != null ? (
                 <>
-                  <h1>Deployment:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">{deploymentLink}</a>
+                  <h1>Deployment or Video:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">Click me
+                  <HiOutlineArrowRight style={{marginLeft: '5%' }}/></a>
                 </>
               ) : (
                 <>
-                  <h1>Deployment:</h1> <p>No Deployment</p>
+                  <h1>Deployment or Video:</h1> <p>[Private]</p>
                 </>)}
             </div>
             <div className='img-container'>

@@ -132,12 +132,12 @@ nav {
   border-radius: 5px;
   border-width: 1px;
   outline: none !important;
-  width: 20%;
-  height: 90%; 
+  width: 15%;
+  height: 85%; 
   margin-left: 2.5%;
   margin-right: 2.5%;
   cursor: pointer; 
-  font-size: 200%;
+  font-size: 150%;
   color: #000000;
 }
 
@@ -149,11 +149,13 @@ nav {
 .text-wrapper {
   display: flex;
   flex-direction: column;
+  margin-right: 10%;
+  margin-left: 10%;
   align-items: center;
-  margin-right: 15%;
-  margin-left: 15%;
   text-align: center;
+  justify-content: center; 
 }
+
 
 .text-wrapper h1 {
   font-family: "Jersey 10", sans-serif;
@@ -165,7 +167,18 @@ nav {
   color: beige;
 }
 
-.text-wrapper a,
+.text-wrapper a {
+  background-color: rgb(30, 175, 201);
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-wrapper p {
   text-align: center;
   font-size: 150%;
@@ -301,14 +314,17 @@ nav {
   }
 
   .button-container button {
-    font-size: 150%;
+    font-size: 100%;
   }
   
   .text-wrapper h1 {
     font-size: 260%;
   }
 
-  .text-wrapper a,
+  .text-wrapper a {
+    width: 40%;
+  }
+
   .text-wrapper p {
     font-size: 100%;
   }

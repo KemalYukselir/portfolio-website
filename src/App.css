@@ -123,7 +123,7 @@ nav {
   margin-bottom: 4%;
   display: flex;
   justify-content: center;
-  height: 50px; /* Set a specific height for the container */
+  height: 50px; 
 }
 
 .button-container button {
@@ -251,6 +251,8 @@ nav {
 @media (max-width: 600px) {
   .navbar-menu-container {
     display: flex;
+    transform: scale(2);
+    color: white;
   }
   .navbar-links-container{
     display: none;
@@ -287,9 +289,15 @@ nav {
     transform: scale(0.85); 
   }
 
+  .img-wrapper:hover {
+    transform: scale(1.01); 
+  }
+
 
   .button-container {
+    transform: scale(0.8);
     margin-top: 10%;
+    margin-bottom: 0%;
   }
   
   .text-wrapper h1 {

@@ -13,7 +13,6 @@ const handleMediaQueryChange = (mediaQueryList) => {
 
   // Initially, call the callback function to check if the media query matches
   handleMediaQueryChange(mediaQuery);
-
   
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

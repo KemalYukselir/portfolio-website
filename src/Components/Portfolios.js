@@ -32,8 +32,8 @@ const handleMediaQueryChange = (mediaQueryList) => {
           <div className='portfolio-section'>
             <div className='img-container'>
               <div className="button-container">
-                <button className='previous-image' onClick={previousImage}>{"<"}</button>
-                <button className='next-image' onClick={nextImage}>{">"}</button>
+                <button className='previous-image' onClick={previousImage}>&lt;</button>
+                <button className='next-image' onClick={nextImage}>&gt;</button>
               </div>
               <div className='img-wrapper'>
                 {/* Image */}
@@ -88,8 +88,8 @@ const handleMediaQueryChange = (mediaQueryList) => {
             </div>
             <div className='img-container'>
               <div className="button-container">
-                <button className='previous-image' onClick={previousImage}>{"<"}</button>
-                <button className='next-image' onClick={nextImage}>{">"}</button>
+                <button className='previous-image' onClick={previousImage}>&lt;</button>
+                <button className='next-image' onClick={nextImage}>&gt;</button>
               </div>
               <div className='img-wrapper'>
                 {/* Image */}

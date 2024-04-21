@@ -299,6 +299,10 @@ nav {
     margin-top: 10%;
     margin-bottom: 0%;
   }
+
+  .button-container button {
+    font-size: 150%;
+  }
   
   .text-wrapper h1 {
     font-size: 260%;
@@ -307,10 +311,6 @@ nav {
   .text-wrapper a,
   .text-wrapper p {
     font-size: 100%;
-  }
-
-  .work-section-info {
-    /* height: 10%; */
   }
 
   .work-section-top p {

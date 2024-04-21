@@ -83,6 +83,14 @@ nav {
   margin-top: 3%;
 }
 
+
+.image-controller-container {
+  margin-bottom: 40%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio-section {
   flex: 1;
   display: flex;
@@ -92,13 +100,6 @@ nav {
   text-align: center; 
   min-height: 70vh; 
   margin-bottom: 10%;
-}
-
-.image-controller-container {
-  margin-bottom: 40%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .portfolio-section img {
@@ -150,7 +151,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-right: 15%;
-  margin-left: 10%;
+  margin-left: 15%;
   text-align: center;
 }
 
@@ -229,11 +230,59 @@ nav {
   flex-wrap: wrap;
 }
 
-@media (max-width: 900px) {
+
+/* Iphone Compatibility */
+@media (max-width: 600px) {
   .navbar-menu-container {
     display: flex;
   }
   .navbar-links-container{
     display: none;
   }
+  .home-section #primary-heading {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 5%;
+  }
+  .home-section #primary-text {
+    font-size: 15px;
+    color: beige;
+  }
+
+  .home-section p {
+    margin-bottom: 5%;
+  }
+
+  .portfolio-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    min-height: 70vh; 
+    margin-bottom: 10%;
+  }
+
+  .img-wrapper {
+    box-shadow: none;
+    transform: scale(0.85); 
+  }
+
+
+  .button-container {
+    margin-top: 10%;
+  }
+  
+  .text-wrapper h1 {
+    font-size: 260%;
+  }
+
+  .text-wrapper p {
+    font-size: 100%;
+  }
+
+
 }

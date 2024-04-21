@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
 
 const Portfolios = ({ projectName, gameStack, githubLink, deploymentLink, imgPlaceHolder, imgWidth, imgHeight, flip }) => {
+  // Check if the viewport width is less than or equal to 600px
+const mediaQuery = window.matchMedia("(max-width: 600px)");
+
+// Define a callback function to execute when the media query matches
+const handleMediaQueryChange = (mediaQueryList) => {
+  if (mediaQueryList.matches) {
+    flip = false;
+  } 
+  };
+
+  // Initially, call the callback function to check if the media query matches
+  handleMediaQueryChange(mediaQuery);
+
+  
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {

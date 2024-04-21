@@ -138,7 +138,7 @@ nav {
   margin-right: 2.5%;
   cursor: pointer; 
   font-size: 200%;
-  color: #00ddff;
+  color: #000000;
 }
 
 .button-container button:hover {
@@ -304,6 +304,7 @@ nav {
     font-size: 260%;
   }
 
+  .text-wrapper a,
   .text-wrapper p {
     font-size: 100%;
   }

@@ -45,7 +45,15 @@ const handleMediaQueryChange = (mediaQueryList) => {
               {/* Project Details */}
               <h1>Project Name:</h1> <p>{projectName}</p>
               <h1>Game Stack:</h1> <p>{gameStack}</p>
-              <h1>GitHub:</h1> <p>{githubLink}</p>
+              {githubLink != null ? (
+                <>
+                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">{githubLink}</a>
+                </>
+              ) : (
+                <>
+                  <h1>GitHub:</h1> <p>[Private]</p>
+                </>)}
+
               {deploymentLink != null ? (
                 <>
                   <h1>Deployment:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">{deploymentLink}</a>
@@ -62,8 +70,14 @@ const handleMediaQueryChange = (mediaQueryList) => {
               {/* Project Details */}
               <h1>Project Name:</h1> <p>{projectName}</p>
               <h1>Game Stack:</h1> <p>{gameStack}</p>
-              <h1>GitHub:</h1> <p>{githubLink}</p>
-              {deploymentLink != null ? (
+              {githubLink != null ? (
+                <>
+                  <h1>GitHub:</h1><a href={githubLink} target="_blank" rel="noreferrer">{githubLink}</a>
+                </>
+              ) : (
+                <>
+                  <h1>GitHub:</h1> <p>[Private]</p>
+                </>)}              {deploymentLink != null ? (
                 <>
                   <h1>Deployment:</h1><a href={deploymentLink} target="_blank" rel="noreferrer">{deploymentLink}</a>
                 </>

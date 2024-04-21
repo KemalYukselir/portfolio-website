@@ -31,7 +31,7 @@ function App() {
       <Portfolios
         projectName="Mafia Game"
         gameStack="React Native, Node.js"
-        githubLink="[Private]"
+        githubLink={null}
         deploymentLink="https://themafiagame.netlify.app/"
         imgPlaceHolder= {[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
         imgWidth = "550px"

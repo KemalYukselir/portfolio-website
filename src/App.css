@@ -295,6 +295,7 @@ nav {
     display: flex;
     transform: scale(2);
     color: white;
+    margin-right: 5%;
   }
   .navbar-links-container{
     display: none;
@@ -348,14 +349,17 @@ nav {
   
   .text-wrapper h1 {
     font-size: 260%;
+    width: 150%;
+
   }
 
   .text-wrapper a {
-    width: 40%;
+    width: 60%;
   }
 
   .text-wrapper p {
     font-size: 100%;
+    width: 135%;
   }
 
   .work-section-top p {
@@ -370,5 +374,6 @@ nav {
     transform: scale(0.3);
     flex-wrap: nowrap;
   }
+
 
 }

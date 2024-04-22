@@ -10,7 +10,7 @@ const mediaQuery = window.matchMedia("(max-width: 600px)");
 // Define a callback function to execute when the media query matches
 const handleMediaQueryChange = (mediaQueryList) => {
   if (mediaQueryList.matches) {
-    flip = false;
+    flip = true;
   } 
   };
 

@@ -30,8 +30,10 @@ function App() {
       <Home/>
       <Portfolios
         projectName="Mafia Game"
-        gameStack="React Native, Node.js"
+        gameStack="[React Native, Node.js]"
         githubLink={null}
+        projectInformation=
+        "The Mafia Game is a game where a group of friends get together and immerse themselves in a social deduction experience, taking on the roles of mafia and civilians in a battle of wits and deception."
         deploymentLink="https://themafiagame.netlify.app/"
         imgPlaceHolder= {[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
         imgWidth = "350px"
@@ -39,18 +41,27 @@ function App() {
       />
       <Portfolios
         projectName="Escape The Ghosts"
-        gameStack="Unity, C#"
+        gameStack="[Unity, C#]"
         githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
+        projectInformation='
+        Escape The Ghosts is a game where the player has to escape the maze full of ghosts by collecting gems scattered across the map. 
+        The player has a gun and 4 health points with power-ups ready to be picked up.
+        '
         deploymentLink = {null}
         imgPlaceHolder= {[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
-        imgWidth = "350px"
+        imgWidth = "400px"
         imgHeight = "400px"
         flip={true}
       />
       <Portfolios
         projectName="CyberTrace - Digital Forensics Game (Final Year Project)"
-        gameStack="HTML/CSS/JS, Java, Springboot, MySQL"
+        gameStack="[HTML/CSS/JS, Java, Springboot, MySQL]"
         githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
+        projectInformation='
+        CyberTrace is a short video game/experience based around the concept of digital forensics from the point of view of volunteer law enforcement, 
+        with access to personal information and a persons online presence of individuals who are flagged as potentially 
+        violating internet laws or actual laws via the internet
+        '
         deploymentLink = {null}
         imgPlaceHolder= {[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
         imgWidth = "450px"
@@ -58,8 +69,13 @@ function App() {
       />
       <Portfolios
         projectName="Smart Plant Pot"
-        gameStack="Arduino, C++"
+        gameStack="[Arduino, C++]"
         githubLink="https://github.com/KemalYukselir/Smart-Plant-Pot"
+        projectInformation="
+        The Smart Plant Pot is designed for users to monitor the plant's levels through an application.
+        The Blynk application and LED display indicate when the plant needs watering.
+        Users can monitor soil moisture levels, temperature, and humidity. Additionally, users can monitor multiple different plants as they wish.        
+        "
         deploymentLink = "https://www.youtube.com/watch?v=2mXiLEbZyAU&ab_channel=Kemal"
         imgPlaceHolder= {[plantPot1, plantPot2, plantPot3, plantPot4]}
         imgWidth = "359px"

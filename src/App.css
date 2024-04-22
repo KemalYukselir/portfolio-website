@@ -20,22 +20,20 @@ body {
 }
 
 nav {
-  margin-top: 3rem; /* Add left margin for spacing between links */
+  background-color: #343434;
   position: fixed;
   top: 0;
-  width: 85%;
+  left: 0;
+  width: 100%;
+  height: 7%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-/* .nav-logo-container img{
-  margin-top: 5%;
-  width: 40%;
-} */
-.navbar-menu-container {
-  display: none;
-}
 
+.navbar-links-container {
+  margin-right: 3%;
+}
 .navbar-links-container a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -44,9 +42,28 @@ nav {
   margin-left: 2rem; /* Add left margin for spacing between links */
 }
 
+.navbar-links-container a:hover {
+  color: black;
+}
+
+.navBar-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+
 .navbar-menu-container svg {
   cursor: pointer;
 }
+
+
+
+
 
 
 
@@ -147,10 +164,11 @@ nav {
 }
 
 .text-wrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   align-items: center;
   text-align: center;
   justify-content: center; 
@@ -161,10 +179,20 @@ nav {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  font-size: 420%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-size: 350%;
   color: beige;
+}
+
+.text-wrapper p {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 150%;
+  width: 60%;
 }
 
 .text-wrapper a {
@@ -179,10 +207,11 @@ nav {
   align-items: center;
 }
 
-.text-wrapper p {
-  text-align: center;
-  font-size: 150%;
+.text-wrapper a:hover {
+  transform: scale(1.1);
 }
+
+
 
 
 

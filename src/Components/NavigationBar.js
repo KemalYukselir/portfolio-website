@@ -1,5 +1,8 @@
 import React, {useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { RiContactsBook3Fill } from "react-icons/ri";
+import { MdOutlineDesignServices } from "react-icons/md";
+
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -11,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+
 
 
 const NavigationBar = () => {
@@ -46,14 +50,10 @@ const NavigationBar = () => {
 
   return (
     <nav>
-      {/* <div className="nav-logo-container">
-        <img src={logo192} alt="React Logo" />
-      </div> */}
-
       <div className="navbar-links-container">
-        <a href="#home" onClick={handleHomeClick}>Home</a>
-        <a href="#portfolios" onClick={handlePortfoliosClick}>Portfolios</a>
-        <a href="#contact" onClick={handleContactClick}>Contact</a>
+        <a href="#home" onClick={handleHomeClick}> Home</a>
+        <a href="#portfolios" onClick={handlePortfoliosClick}> <MdOutlineDesignServices className="navBar-icon"/> Portfolios</a>
+        <a href="#contact" onClick={handleContactClick}> <RiContactsBook3Fill className="navBar-icon"/> Contact</a>
       </div>
 
       <div className="navbar-menu-container">

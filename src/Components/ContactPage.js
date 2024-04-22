@@ -39,7 +39,6 @@ const ContactPage = () => {
             >
               <div className="info-boxes-img-container">{data.image}</div>
               <h2>{data.title}</h2>
-              <p>Click Me</p>
             </a>
           </div>
 

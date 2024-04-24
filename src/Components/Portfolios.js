@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Button from '@mui/material/Button';
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 const Portfolios = ({
@@ -42,8 +43,8 @@ const Portfolios = ({
     <div className='portfolio-section'>
       <div className={flip ? 'img-container-flip' : 'img-container'}>
         <div className="button-container">
-          <button className='previous-image' onClick={previousImage}>&lt;</button>
-          <button className='next-image' onClick={nextImage}>&gt;</button>
+          <Button variant="contained" onClick={previousImage}>Previous</Button>
+          <Button variant="contained" onClick={nextImage}>Next</Button>
         </div>
         <div className='img-wrapper'>
           <img src={imgPlaceHolder[currentImageIndex]} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }} />
@@ -56,13 +57,17 @@ const Portfolios = ({
         <p>{projectInformation}</p>
         <h1>GitHub:</h1>
         {githubLink != null ? (
-          <a href={githubLink} target="_blank" rel="noreferrer">Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} /></a>
+          <Button variant="contained" onClick={() => window.open(githubLink, "_blank", "noopener")} style={{ cursor: 'pointer' }}>
+          Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} />
+          </Button>    
         ) : (
           <p>[Private]</p>
         )}
         <h1>Deployment or Video:</h1>
         {deploymentLink != null ? (
-          <a href={deploymentLink} target="_blank" rel="noreferrer">Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} /></a>
+          <Button variant="contained" onClick={() => window.open(deploymentLink, "_blank", "noopener")} style={{ cursor: 'pointer' }}>
+          Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} />
+          </Button>
         ) : (
           <p>[Private]</p>
         )}

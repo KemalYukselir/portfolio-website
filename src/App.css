@@ -192,7 +192,6 @@ nav {
 }
 .home-section {
   margin-top: 7%;
-  font-family: "Jersey 10 Charted", sans-serif;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -214,10 +213,11 @@ nav {
 
 .home-heading-section h1 span,
 .home-heading-section h1 {
-  font-family: "Jersey 10 Charted", sans-serif;
-  font-weight: 400;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 200;
   font-style: normal;
   font-size: 120px;
+  color: beige;
 }
 
 
@@ -330,7 +330,7 @@ nav {
   overflow: hidden; 
   box-sizing: border-box; 
   padding: 0; 
-  box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+  box-shadow: -10px 20px 6px rgba(0, 0, 0, 0.5); /* Add drop shadow */
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
 
@@ -354,8 +354,7 @@ nav {
 }
 
 .button-container button {  
-  background-color: #34b3ed; /* Blue */
-  border: none;
+  width: 35%;
   border-radius: 5px;
   color: #ffffff; /* White */
   padding: 10px 20px;
@@ -408,12 +407,10 @@ nav {
   width: 60%;
 }
 
-.text-wrapper a {
-  background-color: rgb(30, 175, 201);
+.text-wrapper button {
   color: white;
-  text-decoration: none;
   border-radius: 7px;
-  width: 30%;
+  width: 25%;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -459,11 +456,12 @@ nav {
   max-width: 600px !important;
 }
 .work-section-top h1 {
-  font-family: "Jersey 10 Charted", sans-serif;
+  font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 600%;
   max-width: 800px !important;
+  color: beige;
 }
 
 .work-section-bottom {

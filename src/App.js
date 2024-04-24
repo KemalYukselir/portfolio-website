@@ -2,6 +2,7 @@ import './App.css';
 import Home from './Components/Home';
 import Portfolios from './Components/Portfolios';
 import ContactPage from './Components/ContactPage';
+import AnimationBubbles from './Components/AnimationBubbles';
 
 import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
 import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
@@ -27,7 +28,9 @@ import plantPot4 from "./Assets/plantPot4.png";
 function App() {
   return (
     <div className="App">
+      <AnimationBubbles/>
       <Home/>
+      <AnimationBubbles/>
       <Portfolios
         projectName="Mafia Game"
         gameStack="[React Native, Node.js]"
@@ -39,6 +42,7 @@ function App() {
         imgWidth = "350px"
         imgHeight = "400px"
       />
+      <AnimationBubbles/>
       <Portfolios
         projectName="Escape The Ghosts"
         gameStack="[Unity, C#]"
@@ -53,6 +57,7 @@ function App() {
         imgHeight = "400px"
         flip={true}
       />
+      <AnimationBubbles/>
       <Portfolios
         projectName="CyberTrace - Digital Forensics Game (Final Year Project)"
         gameStack="[HTML/CSS/JS, Java, Springboot, MySQL]"
@@ -67,6 +72,7 @@ function App() {
         imgWidth = "450px"
         imgHeight = "400px"
       />
+      <AnimationBubbles/>
       <Portfolios
         projectName="Smart Plant Pot"
         gameStack="[Arduino, C++]"

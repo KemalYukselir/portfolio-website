@@ -17,6 +17,19 @@ body {
 	background: linear-gradient(to right, #234d5e, #19839e);
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2%;
+  font-size: 400%;
+  color: beige;
+}
+
 /* -------- Animation Section */
 /* -------- Animation Section */
 /* -------- Animation Section */
@@ -246,16 +259,16 @@ nav {
   margin-top: 3%;
 }
 
-
-
-
-
+  /* -------- Skillset Section */
+  /* -------- Skillset Section */
+  /* -------- Skillset Section */
+  /* -------- Skillset Section */
 
 .skills-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .skills-section {
@@ -347,23 +360,10 @@ nav {
   font-size: 17px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* -------- Portfolio Section */
+  /* -------- Portfolio Section */
+  /* -------- Portfolio Section */
+  /* -------- Portfolio Section */
 
 .image-controller-container {
   margin-bottom: 40%;
@@ -392,16 +392,44 @@ nav {
   overflow: hidden; 
   box-sizing: border-box; 
   padding: 0; 
-  box-shadow: -10px 20px 6px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add drop shadow */
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
 
 .img-wrapper:hover {
-  transform: scale(1.2); 
+  transform: scale(1.1); 
 }
 
 .img-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center; 
   order: 1;
+}
+
+.project-title-container {
+  margin-bottom: 5%;
+}
+
+.project-title-container p {
+  font-size: 125%;
+}
+
+.project-title-container h1 {
+  color: black;
+}
+
+.img-container h1 {
+  font-size: 300%;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  color: beige;
 }
 
 .img-container-flip {
@@ -416,11 +444,11 @@ nav {
 }
 
 .button-container button {  
-  width: 35%;
+  width: 40%;
   border-radius: 5px;
   color: #ffffff; /* White */
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -438,11 +466,9 @@ nav {
 
 
 .text-wrapper {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
   align-items: center;
   text-align: center;
   justify-content: center; 
@@ -450,12 +476,12 @@ nav {
 
 
 .text-wrapper h1 {
+  font-size: 300%;
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 2%;
   margin-top: 2%;
-  font-size: 350%;
   color: beige;
 }
 
@@ -466,7 +492,7 @@ nav {
   font-style: normal;
   text-align: center;
   font-size: 150%;
-  width: 60%;
+  width: 90%;
 }
 
 .text-wrapper button {
@@ -564,6 +590,11 @@ nav {
 
 /* Iphone Compatibility */
 @media (max-width: 600px) {
+
+  h1 {
+    font-size: 300%;
+  }
+
   .navbar-menu-container {
     display: flex;
     transform: scale(2);

@@ -34,6 +34,12 @@ import { FaJava } from "react-icons/fa";
 import { SiCsharp } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { TbSql } from "react-icons/tb";
+import { DiMongodb } from "react-icons/di";
 
 
 function App() {
@@ -41,11 +47,18 @@ function App() {
     <div className="App">
       <AnimationBubbles/>
       <Home/>
+      <h1>- Personal Skills -</h1>
       <SkillSection 
         skillsetTitle="Languages"
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
         <FaHtml5 className='skillset-icon'/>, "HTML", <FaCss3Alt className='skillset-icon'/>, "CSS", <FaJava className='skillset-icon'/>, "Java",
         <SiCsharp className='skillset-icon'/>, "C#", <SiCplusplus className='skillset-icon'/>, "C++", <SiTypescript className='skillset-icon'/>, "Typescript"
+      ]}
+      />
+      <SkillSection 
+        skillsetTitle="Tools"
+        skills={[<FaAngular className='skillset-icon'/>, "Angular", <FaReact className='skillset-icon'/>, "React", <FaNodeJs className='skillset-icon'/>, "Node.js",
+        <FaFigma className='skillset-icon'/>, "Figma", <TbSql className='skillset-icon'/>, "SQL", <DiMongodb className='skillset-icon'/>, "MongoDB"
       ]}
       />
       <AnimationBubbles/>
@@ -57,7 +70,7 @@ function App() {
         "The Mafia Game is a game where a group of friends get together and immerse themselves in a social deduction experience, taking on the roles of mafia and civilians in a battle of wits and deception."
         deploymentLink="https://themafiagame.netlify.app/"
         imgPlaceHolder= {[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
-        imgWidth = "350px"
+        imgWidth = "270px"
         imgHeight = "400px"
       />
       <AnimationBubbles/>
@@ -72,7 +85,7 @@ function App() {
         deploymentLink = {null}
         imgPlaceHolder= {[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
         imgWidth = "400px"
-        imgHeight = "400px"
+        imgHeight = "350px"
         flip={true}
       />
       <AnimationBubbles/>
@@ -85,10 +98,10 @@ function App() {
         with access to personal information and a persons online presence of individuals who are flagged as potentially 
         violating internet laws or actual laws via the internet
         '
-        deploymentLink = {null}
+        deploymentLink = "https://www.youtube.com/watch?v=dhT_Q_6H3w8"
         imgPlaceHolder= {[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
-        imgWidth = "450px"
-        imgHeight = "400px"
+        imgWidth = "600px"
+        imgHeight = "300px"
       />
       <AnimationBubbles/>
       <Portfolios

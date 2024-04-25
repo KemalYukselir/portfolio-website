@@ -3,6 +3,7 @@ import Home from './Components/Home';
 import Portfolios from './Components/Portfolios';
 import ContactPage from './Components/ContactPage';
 import AnimationBubbles from './Components/AnimationBubbles';
+import SkillSection from './Components/SkillSection';
 
 import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
 import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
@@ -25,11 +26,28 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
+import { FaPython } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiCsharp } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+
+
 function App() {
   return (
     <div className="App">
       <AnimationBubbles/>
       <Home/>
+      <SkillSection 
+        skillsetTitle="Languages"
+        skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
+        <FaHtml5 className='skillset-icon'/>, "HTML", <FaCss3Alt className='skillset-icon'/>, "CSS", <FaJava className='skillset-icon'/>, "Java",
+        <SiCsharp className='skillset-icon'/>, "C#", <SiCplusplus className='skillset-icon'/>, "C++", <SiTypescript className='skillset-icon'/>, "Typescript"
+      ]}
+      />
       <AnimationBubbles/>
       <Portfolios
         projectName="Mafia Game"

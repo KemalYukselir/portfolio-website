@@ -246,6 +246,68 @@ nav {
   margin-top: 3%;
 }
 
+
+
+
+
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  width: 55%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.skills-section h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2%;
+  font-size: 350%;
+  color: beige;
+}
+
+.language-logos-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  width: 90%;
+  height: 180px;
+  background-color: #4db6d1;
+  border-radius: 10px;
+}
+
+.language-logos-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 55px;
+  border-radius: 5px;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  background-color: rgb(43, 43, 43);
+  color: beige;
+}
+
+.skillset-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  font-size: 25px;
+  color: #4db6d1;
+}
+
 /* -------- Terminal Screen CSS in home componenet */
 /* -------- Terminal Screen CSS in home componenet */
 /* -------- Terminal Screen CSS in home componenet */
@@ -563,9 +625,27 @@ nav {
     word-spacing: 0; 
   }
 
+  /* -------- Skillset Section */
+  /* -------- Skillset Section */
+  /* -------- Skillset Section */
 
+  .language-logos-container {
+    width: 150%;
+  }
 
+  .language-logos-container p {
+    margin-top: 5%;
+    font-size: 0px;
+  }
 
+  .skillset-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #4db6d1;
+    margin-right: 0%;
+  }
 
   .portfolio-section {
     flex: 1;

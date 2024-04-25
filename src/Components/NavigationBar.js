@@ -2,6 +2,7 @@ import React, {useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import { MdOutlineDesignServices } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
 
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -28,12 +29,20 @@ const NavigationBar = () => {
   const handlePortfoliosClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 6);
   };
+  const handleSkillsClick = () => {
+    window.scrollTo(0, document.body.scrollHeight / 7.5);
+  };
 
   const navBarOptions = [
     {
       text: "Home",
       icon: <HomeIcon/>,
       onClick: handleHomeClick
+    },
+    {
+      text: "Skills",
+      icon: <FaCode/>,
+      onClick: handleSkillsClick
     },
     {
       text: "Portfolios",
@@ -52,6 +61,7 @@ const NavigationBar = () => {
     <nav>
       <div className="navbar-links-container">
         <a href="#home" onClick={handleHomeClick}> Home</a>
+        <a href="#Skills" onClick={handleSkillsClick}> <FaCode/> Skills</a>
         <a href="#portfolios" onClick={handlePortfoliosClick}> <MdOutlineDesignServices className="navBar-icon"/> Portfolios</a>
         <a href="#contact" onClick={handleContactClick}> <RiContactsBook3Fill className="navBar-icon"/> Contact</a>
       </div>

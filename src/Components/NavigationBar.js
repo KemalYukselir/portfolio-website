@@ -27,7 +27,7 @@ const NavigationBar = () => {
     window.scrollTo(0, document.body.scrollHeight);
   };
   const handlePortfoliosClick = () => {
-    window.scrollTo(0, document.body.scrollHeight / 6);
+    window.scrollTo(0, document.body.scrollHeight / 3.3);
   };
   const handleSkillsClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 7.5);
@@ -61,7 +61,7 @@ const NavigationBar = () => {
     <nav>
       <div className="navbar-links-container">
         <a href="#home" onClick={handleHomeClick}> Home</a>
-        <a href="#Skills" onClick={handleSkillsClick}> <FaCode/> Skills</a>
+        <a href="#Skills" onClick={handleSkillsClick}> <FaCode className="navBar-icon"/> Skills</a>
         <a href="#portfolios" onClick={handlePortfoliosClick}> <MdOutlineDesignServices className="navBar-icon"/> Portfolios</a>
         <a href="#contact" onClick={handleContactClick}> <RiContactsBook3Fill className="navBar-icon"/> Contact</a>
       </div>

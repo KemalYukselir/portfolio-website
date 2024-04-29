@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Button from '@mui/material/Button';
 import { HiOutlineArrowRight } from "react-icons/hi";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 const Portfolios = ({
   projectName,
@@ -41,7 +46,29 @@ const Portfolios = ({
 
   return (
     <div className='portfolio-section'>
-      <div className={flip ? 'img-container-flip' : 'img-container'}>
+      <Card sx={{ maxWidth: 345, marginRight: '2.5%', marginLeft: '2.5%' }}>
+        <CardMedia
+          sx={{ height: 170 }}
+          image={imgPlaceHolder[0]}
+          title={projectName}
+        />
+        <CardContent>
+          <Typography sx={{color: '#1976d2'}} gutterBottom variant="h5" component="div">
+            {projectName}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{marginBottom: '10%'}}>
+            {projectInformation}
+          </Typography>
+          <Typography variant="h5" component="div">
+            {gameStack}
+          </Typography>
+        </CardContent>
+        <CardActions sx={{justifyContent: 'center', alignItems: 'center'}}>
+          <Button size="small" onClick={() => window.open(githubLink, "_blank", "noopener")}>GitHub</Button>
+          <Button size="small" onClick={() => window.open(deploymentLink, "_blank", "noopener")}>Deployment/Video</Button>
+        </CardActions>
+      </Card>
+      {/* <div className={flip ? 'img-container-flip' : 'img-container'}>
         <div className='project-title-container'>
           <h1>Project Name And Tech Stack:</h1>
           <p>{projectName} <br /> {gameStack}</p>
@@ -74,7 +101,7 @@ const Portfolios = ({
         ) : (
           <p>[Private]</p>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

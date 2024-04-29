@@ -15,7 +15,6 @@ import escapeTheGhosts2 from "./Assets/escapeTheGhosts2.png";
 import escapeTheGhosts3 from "./Assets/escapeTheGhosts3.png";
 import escapeTheGhosts4 from "./Assets/escapeTheGhosts4.png";
 
-
 import finalYearProj1 from "./Assets/finalYearProj1.png";
 import finalYearProj2 from "./Assets/finalYearProj2.png";
 import finalYearProj3 from "./Assets/finalYearProj3.png";
@@ -61,64 +60,60 @@ function App() {
         <FaFigma className='skillset-icon'/>, "Figma", <TbSql className='skillset-icon'/>, "SQL", <DiMongodb className='skillset-icon'/>, "MongoDB"
       ]}
       />
-      <AnimationBubbles/>
-      <Portfolios
-        projectName="Mafia Game"
-        gameStack="[React Native, Node.js]"
-        githubLink={null}
-        projectInformation=
-        "The Mafia Game is a game where a group of friends get together and immerse themselves in a social deduction experience, taking on the roles of mafia and civilians in a battle of wits and deception."
-        deploymentLink="https://themafiagame.netlify.app/"
-        imgPlaceHolder= {[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
-        imgWidth = "270px"
-        imgHeight = "400px"
-      />
-      <AnimationBubbles/>
-      <Portfolios
-        projectName="Escape The Ghosts"
-        gameStack="[Unity, C#]"
-        githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
-        projectInformation='
-        Escape The Ghosts is a game where the player has to escape the maze full of ghosts by collecting gems scattered across the map. 
-        The player has a gun and 4 health points with power-ups ready to be picked up.
-        '
-        deploymentLink = {null}
-        imgPlaceHolder= {[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
-        imgWidth = "400px"
-        imgHeight = "350px"
-        flip={true}
-      />
-      <AnimationBubbles/>
-      <Portfolios
-        projectName="CyberTrace - Digital Forensics Game (Final Year Project)"
-        gameStack="[HTML/CSS/JS, Java, Springboot, MySQL]"
-        githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
-        projectInformation='
-        CyberTrace is a short video game/experience based around the concept of digital forensics from the point of view of volunteer law enforcement, 
-        with access to personal information and a persons online presence of individuals who are flagged as potentially 
-        violating internet laws or actual laws via the internet
-        '
-        deploymentLink = "https://www.youtube.com/watch?v=dhT_Q_6H3w8"
-        imgPlaceHolder= {[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
-        imgWidth = "600px"
-        imgHeight = "300px"
-      />
-      <AnimationBubbles/>
-      <Portfolios
-        projectName="Smart Plant Pot"
-        gameStack="[Arduino, C++]"
-        githubLink="https://github.com/KemalYukselir/Smart-Plant-Pot"
-        projectInformation="
-        The Smart Plant Pot is designed for users to monitor the plant's levels through an application.
-        The Blynk application and LED display indicate when the plant needs watering.
-        Users can monitor soil moisture levels, temperature, and humidity. Additionally, users can monitor multiple different plants as they wish.        
-        "
-        deploymentLink = "https://www.youtube.com/watch?v=2mXiLEbZyAU&ab_channel=Kemal"
-        imgPlaceHolder= {[plantPot1, plantPot2, plantPot3, plantPot4]}
-        imgWidth = "359px"
-        imgHeight = "450px"
-        flip={true}
-      />
+      <h1>- Projects -</h1>
+      <div className='portfolio-container'>
+        <div>
+          <Portfolios
+            projectName="Mafia Game"
+            gameStack="React Native, Node.js"
+            githubLink={null}
+            projectInformation="The Mafia Game is a game where a group of friends get together and immerse themselves in a social deduction experience, taking on the roles of mafia and civilians in a battle of wits and deception."
+            deploymentLink="https://themafiagame.netlify.app/"
+            imgPlaceHolder={[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
+            imgWidth="270px"
+            imgHeight="400px"
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="Escape The Ghosts"
+            gameStack="Unity, C#"
+            githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
+            projectInformation="Escape The Ghosts is a game where the player has to escape the maze full of ghosts by collecting gems scattered across the map. The player has a gun and 4 health points with power-ups ready to be picked up."
+            deploymentLink={null}
+            imgPlaceHolder={[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
+            imgWidth="400px"
+            imgHeight="350px"
+            flip={true}
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="CyberTrace - Digital Forensics Game"
+            gameStack="HTML/CSS/JS, Java, Springboot, MySQL"
+            githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
+            projectInformation="CyberTrace is a short video game/experience based around the concept of digital forensics from the point of view of volunteer law enforcement, with access to personal information and a persons online presence of individuals who are flagged as potentially violating internet laws or actual laws via the internet"
+            deploymentLink="https://www.youtube.com/watch?v=dhT_Q_6H3w8"
+            imgPlaceHolder={[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
+            imgWidth="600px"
+            imgHeight="300px"
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="Smart Plant Pot"
+            gameStack="Arduino, C++"
+            githubLink="https://github.com/KemalYukselir/Smart-Plant-Pot"
+            projectInformation="The Smart Plant Pot is designed for users to monitor the plant's levels through an application. The Blynk application and LED display indicate when the plant needs watering. Users can monitor soil moisture levels, temperature, and humidity. Additionally, users can monitor multiple different plants as they wish."
+            deploymentLink="https://www.youtube.com/watch?v=2mXiLEbZyAU&ab_channel=Kemal"
+            imgPlaceHolder={[plantPot1, plantPot2, plantPot3, plantPot4]}
+            imgWidth="359px"
+            imgHeight="450px"
+            flip={true}
+          />
+        </div>
+      </div>
+
       <ContactPage/>
     </div>
     

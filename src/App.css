@@ -30,6 +30,14 @@ h1 {
   color: beige;
 }
 
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
 /* -------- Animation Section */
 /* -------- Animation Section */
 /* -------- Animation Section */
@@ -360,6 +368,19 @@ nav {
   font-size: 17px;
 }
 
+.search-bar {
+  color: yellow;
+}
+
+.terminal-text input {
+  background-color: #212121; 
+  border-color: white;
+  border-radius: 5px;
+  color: white;
+  width: auto;
+  margin-left: 1%;
+}
+
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
@@ -380,8 +401,15 @@ nav {
   align-items: center; 
   text-align: center; 
   min-height: 70vh; 
-  margin-bottom: 10%;
 }
+
+.portfolio-section Button{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+}
+
 
 .portfolio-section img {
   display: block;

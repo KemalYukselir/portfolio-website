@@ -25,6 +25,8 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
+import workInProgress from "./Assets/workInProgress.png";
+
 import { FaPython } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
@@ -65,38 +67,56 @@ function App() {
         <div>
           <Portfolios
             projectName="Mafia Game"
-            gameStack="React Native, Node.js"
+            gameStack="React Native, Node.js, Visual Studio Code, Figma"
             githubLink={null}
             projectInformation="The Mafia Game is a game where a group of friends get together and immerse themselves in a social deduction experience, taking on the roles of mafia and civilians in a battle of wits and deception."
             deploymentLink="https://themafiagame.netlify.app/"
             imgPlaceHolder={[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
-            imgWidth="270px"
-            imgHeight="400px"
           />
         </div>
         <div>
           <Portfolios
             projectName="Escape The Ghosts"
-            gameStack="Unity, C#"
+            gameStack="Unity Game Engine, C#, Visual Studio, Figma"
             githubLink="https://github.com/KemalYukselir/Escape-The-Ghosts"
             projectInformation="Escape The Ghosts is a game where the player has to escape the maze full of ghosts by collecting gems scattered across the map. The player has a gun and 4 health points with power-ups ready to be picked up."
+            deploymentLink={null}
+            imgPlaceHolder={[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
+            flip={true}
+          />
+        </div>
+        {/* <div>
+          <Portfolios
+            projectName="Test"
+            gameStack="Test"
+            githubLink=""
+            projectInformation="Test"
             deploymentLink={null}
             imgPlaceHolder={[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
             imgWidth="400px"
             imgHeight="350px"
             flip={true}
           />
+        </div> */}
+        <div>
+          <Portfolios
+            projectName="All That Cafe Website"
+            gameStack="React, Visual Studio Code, Figma"
+            githubLink=""
+            projectInformation="Website for All That Cafe store based in London Southwark. All That Cafe serves breakfast brunch and more. This website is currently in progress and will be made public soon"
+            deploymentLink={null}
+            imgPlaceHolder={[workInProgress]}
+            flip={true}
+          />
         </div>
         <div>
           <Portfolios
-            projectName="CyberTrace - Digital Forensics Game"
+            projectName="CyberTrace"
             gameStack="HTML/CSS/JS, Java, Springboot, MySQL"
             githubLink="https://github.com/KemalYukselir/cyber-trace-digital-forensics"
-            projectInformation="CyberTrace is a short video game/experience based around the concept of digital forensics from the point of view of volunteer law enforcement, with access to personal information and a persons online presence of individuals who are flagged as potentially violating internet laws or actual laws via the internet"
+            projectInformation="CyberTrace - Digital Forensics Game. CyberTrace is a short video game/experience based around the concept of digital forensics from the point of view of volunteer law enforcement."
             deploymentLink="https://www.youtube.com/watch?v=dhT_Q_6H3w8"
             imgPlaceHolder={[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
-            imgWidth="600px"
-            imgHeight="300px"
           />
         </div>
         <div>
@@ -107,8 +127,6 @@ function App() {
             projectInformation="The Smart Plant Pot is designed for users to monitor the plant's levels through an application. The Blynk application and LED display indicate when the plant needs watering. Users can monitor soil moisture levels, temperature, and humidity. Additionally, users can monitor multiple different plants as they wish."
             deploymentLink="https://www.youtube.com/watch?v=2mXiLEbZyAU&ab_channel=Kemal"
             imgPlaceHolder={[plantPot1, plantPot2, plantPot3, plantPot4]}
-            imgWidth="359px"
-            imgHeight="450px"
             flip={true}
           />
         </div>

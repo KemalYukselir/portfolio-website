@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 // import { HiOutlineArrowRight } from "react-icons/hi";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -17,7 +17,7 @@ const Portfolios = ({
   // imgWidth,
   // imgHeight,
 }) => {
-  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   // const [flip, setFlip] = useState(false);
 
   useEffect(() => {
@@ -36,30 +36,55 @@ const Portfolios = ({
     };
   }, []);
 
-  // const nextImage = () => {
-  //   setCurrentImageIndex(prevIndex => (prevIndex + 1) % imgPlaceHolder.length);
-  // };
+  const nextImage = () => {
+    setCurrentImageIndex(prevIndex => (prevIndex + 1) % imgPlaceHolder.length);
+  };
 
-  // const previousImage = () => {
-  //   setCurrentImageIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : imgPlaceHolder.length - 1));
-  // };
+  const previousImage = () => {
+    setCurrentImageIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : imgPlaceHolder.length - 1));
+  };
 
   return (
     <div className='portfolio-section'>
-      <Card sx={{ maxWidth: 345, marginRight: '2.5%', marginLeft: '2.5%' }}>
-        <CardMedia
-          sx={{ height: 170 }}
-          image={imgPlaceHolder[0]}
-          title={projectName}
+      <Card sx={{ 
+        maxWidth: 345, 
+        marginRight: '2.5%', 
+        marginLeft: '2.5%',
+        height: 'auto', 
+        marginBottom: '10%',
+        transition: 'transform 0.3s', // Add transition for smooth scaling
+        '&:hover': {
+          transform: 'scale(1.3)', // Scale up when hovered
+        },
+      }}>
+      <CardMedia
+        component="picture"
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center', 
+          height: 220,
+          backgroundColor: 'black',
+        }}
+      >
+        <img
+          src={imgPlaceHolder[currentImageIndex]}
+          alt="logo"
+          style={{ height: '100%', width: 'auto' }}
         />
+      </CardMedia>
+        <div className="button-container">
+          <Button variant="contained" onClick={previousImage}>{"<"}</Button>
+          <Button variant="contained" onClick={nextImage}>{">"}</Button>
+        </div>
         <CardContent>
-          <Typography sx={{color: '#1976d2'}} gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 'bold'}}>
             {projectName}
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{marginBottom: '10%'}}>
+          <Typography variant="body2" color="text.secondary" sx={{marginBottom: '5%', maxHeight: 120, overflowY: 'auto'}}>
             {projectInformation}
           </Typography>
-          <Typography variant="h5" component="div">
+          <Typography variant="h6" component="div">
             {gameStack}
           </Typography>
         </CardContent>

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { HiOutlineArrowRight } from "react-icons/hi";
+import React, {useEffect } from 'react';
+// import { HiOutlineArrowRight } from "react-icons/hi";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -14,17 +14,17 @@ const Portfolios = ({
   githubLink,
   deploymentLink,
   imgPlaceHolder,
-  imgWidth,
-  imgHeight,
+  // imgWidth,
+  // imgHeight,
 }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [flip, setFlip] = useState(false);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [flip, setFlip] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 600px)");
 
     const handleMediaQueryChange = (mediaQueryList) => {
-      setFlip(mediaQueryList.matches);
+      // setFlip(mediaQueryList.matches);
     };
 
     handleMediaQueryChange(mediaQuery);
@@ -36,13 +36,13 @@ const Portfolios = ({
     };
   }, []);
 
-  const nextImage = () => {
-    setCurrentImageIndex(prevIndex => (prevIndex + 1) % imgPlaceHolder.length);
-  };
+  // const nextImage = () => {
+  //   setCurrentImageIndex(prevIndex => (prevIndex + 1) % imgPlaceHolder.length);
+  // };
 
-  const previousImage = () => {
-    setCurrentImageIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : imgPlaceHolder.length - 1));
-  };
+  // const previousImage = () => {
+  //   setCurrentImageIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : imgPlaceHolder.length - 1));
+  // };
 
   return (
     <div className='portfolio-section'>

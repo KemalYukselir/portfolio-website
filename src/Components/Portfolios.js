@@ -14,11 +14,8 @@ const Portfolios = ({
   githubLink,
   deploymentLink,
   imgPlaceHolder,
-  // imgWidth,
-  // imgHeight,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  // const [flip, setFlip] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 600px)");
@@ -47,7 +44,7 @@ const Portfolios = ({
   return (
     <div className='portfolio-section'>
       <Card sx={{ 
-        maxWidth: 345, 
+        width: '400px',
         marginRight: '2.5%', 
         marginLeft: '2.5%',
         height: 'auto', 
@@ -88,45 +85,30 @@ const Portfolios = ({
             {gameStack}
           </Typography>
         </CardContent>
-        <CardActions sx={{justifyContent: 'center', alignItems: 'center'}}>
-          <Button size="small" onClick={() => window.open(githubLink, "_blank", "noopener")}>GitHub</Button>
-          <Button size="small" onClick={() => window.open(deploymentLink, "_blank", "noopener")}>Deployment/Video</Button>
-        </CardActions>
-      </Card>
-      {/* <div className={flip ? 'img-container-flip' : 'img-container'}>
-        <div className='project-title-container'>
-          <h1>Project Name And Tech Stack:</h1>
-          <p>{projectName} <br /> {gameStack}</p>
-        </div>
+        <CardActions sx={{ justifyContent: 'center', alignItems: 'center' }}>
+          {githubLink ? (
+            <Button size="small" onClick={() => window.open(githubLink, "_blank", "noopener")}>
+              GitHub
+            </Button>
+          ) : (
+            <Button size="small" style={{ color: 'black', pointerEvents: 'none', '&:hover': { background: 'none' } }}>
+              Private
+            </Button>
+          )}
 
-        <div className="button-container">
-          <Button variant="contained" onClick={previousImage}>{"<"}</Button>
-          <Button variant="contained" onClick={nextImage}>{">"}</Button>
-        </div>
-        <div className='img-wrapper'>
-          <img src={imgPlaceHolder[currentImageIndex]} alt="Placeholder" style={{ width: imgWidth, height: imgHeight }} />
-        </div>
-      </div>
-      <div className='text-wrapper'>
-        <h1>Project Information:</h1>
-        <p>{projectInformation}</p>
-        <h1>GitHub:</h1>
-        {githubLink != null ? (
-          <Button variant="contained" onClick={() => window.open(githubLink, "_blank", "noopener")} style={{ cursor: 'pointer' }}>
-          Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} />
-          </Button>    
-        ) : (
-          <p>[Private]</p>
-        )}
-        <h1>Deployment or Video:</h1>
-        {deploymentLink != null ? (
-          <Button variant="contained" onClick={() => window.open(deploymentLink, "_blank", "noopener")} style={{ cursor: 'pointer' }}>
-          Click me <HiOutlineArrowRight style={{ marginLeft: '5%' }} />
-          </Button>
-        ) : (
-          <p>[Private]</p>
-        )}
-      </div> */}
+          {deploymentLink ? (
+            <Button size="small" onClick={() => window.open(deploymentLink, "_blank", "noopener")}>
+              Deployment/Video
+            </Button>
+          ) : (
+            <Button size="small" style={{ color: 'black', pointerEvents: 'none', '&:hover': { background: 'none' } }}>
+              Private
+            </Button>
+          )}
+        </CardActions>
+
+
+      </Card>
     </div>
   );
 };

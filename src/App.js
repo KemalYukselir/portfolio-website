@@ -25,6 +25,11 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
+import allthatcafeImg1 from "./Assets/allthatcafeImg1.png";
+import allthatcafeImg2 from "./Assets/allthatcafeImg2.png";
+import allthatcafeImg3 from "./Assets/allthatcafeImg3.png";
+import allthatcafeImg4 from "./Assets/allthatcafeImg4.png";
+
 import workInProgress from "./Assets/workInProgress.png";
 
 import { FaPython } from "react-icons/fa";
@@ -102,8 +107,19 @@ function App() {
           <Portfolios
             projectName="All That Cafe Website"
             gameStack="React, Visual Studio Code, Figma"
+            githubLink={null}
+            projectInformation="Website for All That Cafe store based in London Southwark. All That Cafe serves breakfast brunch and more. This website is complete with mobile version currently in progress"
+            deploymentLink="https://allthatcafe.netlify.app/"
+            imgPlaceHolder={[allthatcafeImg2,allthatcafeImg1,allthatcafeImg3,allthatcafeImg4]}
+            flip={true}
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="All That Falafel Website"
+            gameStack="React, Visual Studio Code, Figma"
             githubLink=""
-            projectInformation="Website for All That Cafe store based in London Southwark. All That Cafe serves breakfast brunch and more. This website is currently in progress and will be made public soon"
+            projectInformation="Website for All That Falafel store based in London (Multiple Locations). All That Cafe falafel serves the best vegan wraps and meals. This website is currently in progress and will be made public soon"
             deploymentLink={null}
             imgPlaceHolder={[workInProgress]}
             flip={true}

@@ -408,54 +408,7 @@ nav {
   display: block;
 }
 
-.img-wrapper {
-  border-radius: 20px;
-  overflow: hidden; 
-  box-sizing: border-box; 
-  padding: 0; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add drop shadow */
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
-}
 
-.img-wrapper:hover {
-  transform: scale(1.1); 
-}
-
-.img-container {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center; 
-  order: 1;
-}
-
-.project-title-container {
-  margin-bottom: 5%;
-}
-
-.project-title-container p {
-  font-size: 125%;
-}
-
-.project-title-container h1 {
-  color: black;
-}
-
-.img-container h1 {
-  font-size: 300%;
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  color: beige;
-}
-
-.img-container-flip {
-
-}
 
 .button-container {
   margin-top: 4%;
@@ -485,49 +438,10 @@ nav {
 
 
 
-.text-wrapper {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center; 
-}
 
 
-.text-wrapper h1 {
-  font-size: 300%;
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  color: beige;
-}
 
-.text-wrapper p {
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 150%;
-  width: 90%;
-}
 
-.text-wrapper button {
-  color: white;
-  border-radius: 7px;
-  width: 25%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-wrapper a:hover {
-  transform: scale(1.1);
-}
 
 
 

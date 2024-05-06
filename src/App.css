@@ -535,7 +535,7 @@ nav {
   .home-heading-section h1 {
     margin-top: 25%;
     margin-bottom: 15%;
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .home-section #primary-text {
@@ -575,11 +575,11 @@ nav {
   /* -------- Skillset Section */
 
   .skills-section {
-    width: 60%;
+    width: 50%;
   }
 
   .language-logos-container {
-    width: 150%;
+    width: 100%;
   }
 
   .language-logos-container p {

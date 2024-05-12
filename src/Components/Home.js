@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './NavigationBar';
+import Typewriter from 'typewriter-effect';
 import { FaReact } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -11,7 +12,18 @@ const Home = () => {
       <div className="home-section">
           <div className='home-heading-section'>
             <h1 id="primary-heading">
-              C:\Users\Kemal Yukselir{">"}<span className="vertical-line-animation"> |</span>
+              <Typewriter
+              options={
+                {
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  strings: ["Portfolio of Kemal Yukselir"],
+                  pauseFor: 4000
+                }
+              }
+              />
+              {/* C:\Users\Kemal Yukselir{">"}<span className="vertical-line-animation"> |</span> */}
             </h1>
           </div>
 

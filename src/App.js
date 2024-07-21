@@ -1,4 +1,5 @@
 import './App.css';
+import {useEffect} from 'react';
 import Home from './Components/Home';
 import Portfolios from './Components/Portfolios';
 import ContactPage from './Components/ContactPage';
@@ -47,13 +48,78 @@ import { FaFigma } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 
-
 function App() {
+  // Cursor follow animation 
+  useEffect(() => {
+    const coords = { x: 0, y: 0}
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#0cc2c4",
+      "#00bfd5",
+      "#00bbe7",
+      "#00b6f7",
+      "#00afff",
+      "#26a5ff",
+      "#6d99ff",
+      "#9c8aff"
+    ];
+    
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length]
+    });
+
+    const handleMouseMove = (e) => {
+      coords.x = e.clientX;
+      coords.y = e.clientY + window.scrollY; // Adjust for scroll position
+
+      animateCircles()
+    };
+
+    const animateCircles = () => {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+
+        circle.style.scale = (circles.length - index) / 8;
+
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0]
+        x += (nextCircle.x - x) * 0.7;
+        y += (nextCircle.y - y) * 0.7;
+      });
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <div className="App">
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
+      
+
       <AnimationBubbles/>
       <Home/>
       <h1>- Personal Skills -</h1>
+      <AnimationBubbles/>
       <SkillSection 
         skillsetTitle="Languages"
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
@@ -67,6 +133,7 @@ function App() {
         <FaFigma className='skillset-icon'/>, "Figma", <TbSql className='skillset-icon'/>, "SQL", <DiMongodb className='skillset-icon'/>, "MongoDB"
       ]}
       />
+      <AnimationBubbles/>
       <h1>- Projects -</h1>
       <div className='portfolio-container'>
         <div>
@@ -147,7 +214,6 @@ function App() {
           />
         </div>
       </div>
-
       <ContactPage/>
     </div>
     

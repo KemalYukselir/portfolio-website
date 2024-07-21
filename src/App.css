@@ -396,6 +396,15 @@ nav {
   margin-left: 1%;
 }
 
+.terminal-text button {
+  background: none;
+  border: none;
+}
+
+.terminal-text a {
+  color: white;
+}
+
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */

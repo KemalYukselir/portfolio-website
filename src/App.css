@@ -38,6 +38,21 @@ h1 {
   flex-wrap: wrap;
 }
 
+/* -------- Cursor Follow Section */
+/* -------- Cursor Follow Section */
+/* -------- Cursor Follow Section */
+/* -------- Cursor Follow Section */
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* -------- Animation Section */
 /* -------- Animation Section */
 /* -------- Animation Section */
@@ -46,7 +61,7 @@ h1 {
 .box-area {
   z-index: -10;
   width: 85vw;
-  height: 55vw;
+  height: 100vh;
 	position: absolute;
 	left: 0;
 	overflow: hidden;

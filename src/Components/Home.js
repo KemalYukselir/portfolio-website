@@ -37,9 +37,9 @@ const Home = () => {
               <div>[ <span className='terminal-info'>Info</span> ] : Welcome to my portfolio, which consists of projects I have completed or I'm working on. 
                 Check out my contact information section to access my LinkedIn, etc.</div>
               <br/>
-              <div>[ <span className='terminal-info'>Info</span> ] : Feel free to scroll through the project images with the buttons above it.</div>
+              <div>[ <span className='terminal-info'>Info</span> ] : Feel free to scroll through the project images with the buttons on it.</div>
               <br/>
-              <div>[ <span className='terminal-info'>Info</span> ] : This website was made with react. <FaReact/><button><a href="https://github.com/KemalYukselir/portfolio-website" target="_blank" rel="noreferrer">[Github link]</a></button></div>
+              <div>[ <span className='terminal-info'>Info</span> ] : My Portfolio was made with react. <FaReact/><button><a href="https://github.com/KemalYukselir/portfolio-website" target="_blank" rel="noreferrer">Github link</a></button></div>
               <br/>
               C:\Users\Kemal Yukselir{">"} <span className="vertical-line-animation">▯</span>
             </div>

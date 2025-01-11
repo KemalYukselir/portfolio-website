@@ -5,6 +5,7 @@ import Portfolios from './Components/Portfolios';
 import ContactPage from './Components/ContactPage';
 import AnimationBubbles from './Components/AnimationBubbles';
 import SkillSection from './Components/SkillSection';
+import AboutMe from './Components/AboutMe';
 
 import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
 import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
@@ -115,9 +116,10 @@ function App() {
       <div className='circle'></div>
       <div className='circle'></div>
       
-
       <AnimationBubbles/>
       <Home/>
+      <AnimationBubbles/>
+      <AboutMe/>
       <h1>- Personal Skills -</h1>
       <AnimationBubbles/>
       <SkillSection 

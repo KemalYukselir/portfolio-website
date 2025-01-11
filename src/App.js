@@ -39,7 +39,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
-import { SiCsharp } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 import { SiCplusplus } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
@@ -125,7 +125,7 @@ function App() {
         skillsetTitle="Languages"
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
         <FaHtml5 className='skillset-icon'/>, "HTML", <FaCss3Alt className='skillset-icon'/>, "CSS", <FaJava className='skillset-icon'/>, "Java",
-        <SiCsharp className='skillset-icon'/>, "C#", <SiCplusplus className='skillset-icon'/>, "C++", <SiTypescript className='skillset-icon'/>, "Typescript"
+        <TbBrandCSharp className='skillset-icon'/>, "C#", <SiCplusplus className='skillset-icon'/>, "C++", <SiTypescript className='skillset-icon'/>, "Typescript"
       ]}
       />
       <SkillSection 

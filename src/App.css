@@ -281,6 +281,40 @@ nav {
 .home-section p {
   margin-top: 3%;
 }
+/* ----- About Me Page CSS */
+/* ----- About Me Page CSS */
+/* ----- About Me Page CSS */
+
+.aboutme-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.aboutme-section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-section-top p {
+  color: beige;
+  font-size: 120%;
+  margin-top: 2%;
+  max-width: 800px !important;
+}
+.aboutme-section-top h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 600%;
+  max-width: 800px !important;
+  color: beige;
+}
+
 
   /* -------- Skillset Section */
   /* -------- Skillset Section */

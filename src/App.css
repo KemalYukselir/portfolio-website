@@ -605,6 +605,40 @@ nav {
     margin-bottom: 5%;
   }
 
+  /* ----- About Me Page CSS */
+/* ----- About Me Page CSS */
+/* ----- About Me Page CSS */
+
+.aboutme-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.aboutme-section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-section-top p {
+  color: beige;
+  font-size: 100%;
+  margin-top: 2%;
+  max-width: 500px !important;
+}
+.aboutme-section-top h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 400%;
+  max-width: 600px !important;
+  color: beige;
+}
+
   /* -------- Terminal Screen CSS in home componenet */
   /* -------- Terminal Screen CSS in home componenet */
   /* -------- Terminal Screen CSS in home componenet */
@@ -656,6 +690,7 @@ nav {
 
   .portfolio-section {
     flex: 1;
+    transform: scale(0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;

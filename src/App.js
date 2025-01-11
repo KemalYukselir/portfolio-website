@@ -6,7 +6,6 @@ import ContactPage from './Components/ContactPage';
 import AnimationBubbles from './Components/AnimationBubbles';
 import SkillSection from './Components/SkillSection';
 
-
 import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
 import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
 import MafiaGameImg3 from "./Assets/mafiaGameImg3.png";

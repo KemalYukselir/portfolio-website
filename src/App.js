@@ -49,6 +49,7 @@ import { FaFigma } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 
+
 function App() {
   // Cursor follow animation 
   useEffect(() => {
@@ -115,12 +116,11 @@ function App() {
       <div className='circle'></div>
       <div className='circle'></div>
       <div className='circle'></div>
-      
       <AnimationBubbles/>
       <Home/>
       <AnimationBubbles/>
       <AboutMe/>
-      <h1 id='personal-skills-title'>- Technical Skills -</h1>
+      <h1 id='personal-skills-title'>- Technical skills -</h1>
       <AnimationBubbles/>
       <SkillSection 
         skillsetTitle="Languages"
@@ -203,6 +203,7 @@ function App() {
           />
         </div>
       </div>
+      <AnimationBubbles/>
       <ContactPage/>
     </div>
     

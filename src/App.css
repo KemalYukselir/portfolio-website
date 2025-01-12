@@ -42,7 +42,7 @@ h1 {
 /* -------- Cursor Follow Section */
 /* -------- Cursor Follow Section */
 
-.circle {
+/* .circle {
   height: 24px;
   width: 24px;
   border-radius: 24px;
@@ -50,7 +50,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 /* -------- Animation Section */
 /* -------- Animation Section */
@@ -155,7 +155,7 @@ nav {
 }
 
 .navbar-links-container a:hover {
-  color: '#ff4d5a';
+  color: #ff4d5a;
 }
 
 .navBar-icon {
@@ -215,6 +215,29 @@ nav {
   font-size: 50px;
   color: beige;
 }
+
+.home-heading-section button {
+  margin-top: 5%;
+  width: 300px;
+  height: 50px;
+  font-size: 25px; /* Increases text size */
+  background-color: transparent; /* Button background color */
+  color: #ff4d5a; /* Text color */
+  border: 2px solid #ff4d5a; /* Adds a border with color matching the background */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.home-heading-section button:hover {
+  background-color: beige; /* Changes background color on hover */
+  color: #ff4d5a; /* Changes text color on hover */
+  border-color: #ff4d5a; /* Keeps border color consistent on hover */
+}
+
+.home-heading-section button span{
+  padding-right: 5%;
+}
+
 
 
 @keyframes verticalLine {

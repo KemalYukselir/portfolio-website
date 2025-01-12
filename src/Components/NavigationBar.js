@@ -22,7 +22,7 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 const NavigationBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const handleHomeClick = () => {
-    window.scrollTo(0, document.body.scrollHeight / 100);
+    window.scrollTo(0, document.body.scrollHeight / 0);
   };
   const handleAboutMeClick = () => {
     window.scrollTo(0, document.body.scrollHeight / 7.5);

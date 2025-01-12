@@ -136,7 +136,7 @@ function App() {
       ]}
       />
       <AnimationBubbles/>
-      <h1>- Projects -</h1>
+      <h1 id='projects'>- Projects -</h1>
       <div className='portfolio-container'>
         <div>
           <Portfolios
@@ -159,19 +159,6 @@ function App() {
             flip={true}
           />
         </div>
-        {/* <div>
-          <Portfolios
-            projectName="Test"
-            gameStack="Test"
-            githubLink=""
-            projectInformation="Test"
-            deploymentLink={null}
-            imgPlaceHolder={[escapeTheGhosts1, escapeTheGhosts2, escapeTheGhosts3, escapeTheGhosts4]}
-            imgWidth="400px"
-            imgHeight="350px"
-            flip={true}
-          />
-        </div> */}
         <div>
           <Portfolios
             projectName="All That Cafe Website"

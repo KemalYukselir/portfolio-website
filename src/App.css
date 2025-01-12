@@ -14,7 +14,8 @@ img {
 }
 
 body {
-	background: linear-gradient(to right, #234d5e, #19839e);
+  background-color: rgb(65, 65, 65);
+	/* background: linear-gradient(to right, #234d5e, #19839e); */
 }
 
 h1 {
@@ -285,17 +286,17 @@ nav {
 
 .aboutme-section-top p {
   color: beige;
+  font-weight: 300;
   font-size: 120%;
   margin-top: 2%;
-  max-width: 800px !important;
+  max-width: 1000px !important;
 }
 .aboutme-section-top h1 {
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
+  font-weight: 550;
   font-style: normal;
   font-size: 600%;
   max-width: 800px !important;
-  color: beige;
+  color: #ff4d5a;
 }
 
 
@@ -303,6 +304,13 @@ nav {
   /* -------- Skillset Section */
   /* -------- Skillset Section */
   /* -------- Skillset Section */
+
+  #personal-skills-title {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 550%;
+    color: #ff4d5a;  
+  }
 
 .skills-container{
   display: flex;
@@ -426,6 +434,13 @@ nav {
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
+  #projects {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 600%;
+    color: #ff4d5a;
+    margin-bottom: 5%;
+  }
 
 .portfolio-section {
   flex: 1;
@@ -499,12 +514,10 @@ nav {
   max-width: 600px !important;
 }
 .work-section-top h1 {
-  font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 600%;
-  max-width: 800px !important;
-  color: beige;
+  color: #ff4d5a;
 }
 
 .work-section-bottom {

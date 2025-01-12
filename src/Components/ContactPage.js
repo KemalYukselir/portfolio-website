@@ -24,7 +24,7 @@ const ContactPage = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <h1>- Personal Information -</h1>
+        <h1 id="contacts">- Personal Information -</h1>
         <p>Below are my personal information. Send me a message or email if you have any questions.</p>
       </div>
       <div className="work-section-bottom">

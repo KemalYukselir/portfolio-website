@@ -1,19 +1,31 @@
 import React from 'react';
 import Navigation from './NavigationBar';
-import { FaReact } from "react-icons/fa";
-import { FaRegTrashAlt } from "react-icons/fa";
-import { AiOutlinePlus } from "react-icons/ai";
+import { FaArrowDown } from "react-icons/fa";
+// import { FaReact } from "react-icons/fa";
+// import { FaRegTrashAlt } from "react-icons/fa";
+// import { AiOutlinePlus } from "react-icons/ai";
 
 const Home = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects'); // Target the "projects" section
+    if (projectsSection) {
+      const topOffset = projectsSection.offsetTop; // Get the top position relative to the document
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth', // Enable smooth scrolling
+      });
+    }
+  };
   return (
     <div className='home-container'>
       <Navigation />
       <div className="home-section">
           <div className='home-heading-section'>
-          <h1 id="primary-heading">
-            Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
-          </h1>
+            <h1 id="primary-heading">
+              Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
+            </h1>
             <h2>I enjoy solving problems and bringing ideas to life</h2>
+            <button onClick={scrollToProjects} className="scroll-button"><span>My Projects</span><FaArrowDown className="navBar-icon"/></button> 
           </div>
 
           {/* <div className='terminal-screen'> 

@@ -16,6 +16,16 @@ const Home = () => {
       });
     }
   };
+  const scrollToContacts = () => {
+    const projectsSection = document.getElementById('contacts'); // Target the "projects" section
+    if (projectsSection) {
+      const topOffset = projectsSection.offsetTop; // Get the top position relative to the document
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth', // Enable smooth scrolling
+      });
+    }
+  };
   return (
     <div className='home-container'>
       <Navigation />
@@ -25,7 +35,10 @@ const Home = () => {
               Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
             </h1>
             <h2>I enjoy solving problems and bringing ideas to life</h2>
-            <button onClick={scrollToProjects} className="scroll-button"><span>My Projects</span><FaArrowDown className="navBar-icon"/></button> 
+            <div className='buttons'>
+              <button onClick={scrollToProjects} className="scroll-button"><span>My Projects</span><FaArrowDown className="navBar-icon"/></button>
+              <button onClick={scrollToContacts} className="scroll-button"><span>Contact me</span><FaArrowDown className="navBar-icon"/></button>  
+            </div>
           </div>
 
           {/* <div className='terminal-screen'> 

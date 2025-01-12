@@ -120,7 +120,7 @@ function App() {
       <Home/>
       <AnimationBubbles/>
       <AboutMe/>
-      <h1>- Personal Skills -</h1>
+      <h1 id='personal-skills-title'>- Technical Skills -</h1>
       <AnimationBubbles/>
       <SkillSection 
         skillsetTitle="Languages"

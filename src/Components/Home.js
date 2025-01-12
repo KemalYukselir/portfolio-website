@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from './NavigationBar';
-import Typewriter from 'typewriter-effect';
 import { FaReact } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -11,23 +10,13 @@ const Home = () => {
       <Navigation />
       <div className="home-section">
           <div className='home-heading-section'>
-            <h1 id="primary-heading">
-              <Typewriter
-              options={
-                {
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                  strings: ["Portfolio of Kemal Yukselir"],
-                  pauseFor: 4000
-                }
-              }
-              />
-              {/* C:\Users\Kemal Yukselir{">"}<span className="vertical-line-animation"> |</span> */}
-            </h1>
+          <h1 id="primary-heading">
+            Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
+          </h1>
+            <h2>I enjoy solving problems and bringing ideas to life</h2>
           </div>
 
-          <div className='terminal-screen'> 
+          {/* <div className='terminal-screen'> 
             <div className='terminal-selections'>
               <span className='hidden-text'>PROBLEMS OUTPUT DEBUG CONSOLE <span style={{ color: 'green', textDecoration: 'underline'}}>TERMINAL</span> PORTS</span>
               <span className='terminal-option'><AiOutlinePlus/> <FaRegTrashAlt/> ...</span>
@@ -43,7 +32,7 @@ const Home = () => {
               <br/>
               C:\Users\Kemal Yukselir{">"} <span className="vertical-line-animation">▯</span>
             </div>
-          </div>
+          </div> */}
       </div>
     </div>
   );

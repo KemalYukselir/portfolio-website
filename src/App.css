@@ -316,6 +316,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -324,16 +325,14 @@ nav {
   justify-content: center;
   flex-direction: column;
   align-items: center; 
-  width: 55%;
-  height: 300px;
-  border-radius: 10px;
+  width: 75%;
 }
 
 .skills-section h1 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   font-size: 350%;
   color: beige;
 }
@@ -342,29 +341,47 @@ nav {
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
-  width: 90%;
-  height: 180px;
-  background-color: #4db6d1;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+  background: transparent;
+  border-radius: 5px;
 }
 
 .language-logos-container p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 20%;
-  height: 55px;
+  height: 75px;
   border-radius: 5px;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
-  background-color: rgb(43, 43, 43);
+  margin: 2.5%;
+  margin: 2.5%;
   color: beige;
+  position: relative; /* Required for pseudo-element positioning */
+  z-index: 1;
 }
 
+.language-logos-container p::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #fa9ea4, #ff626c, #fa9ea4); /* Gradient colors */
+  z-index: -1; /* Send the gradient behind the element */
+  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px; /* Matches the original border width */
+}
+
+
 .skillset-icon {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 8px;
   font-size: 25px;
   color: #4db6d1;
 }
@@ -514,7 +531,7 @@ nav {
   max-width: 600px !important;
 }
 .work-section-top h1 {
-  font-weight: 400;
+  font-weight: 550;
   font-style: normal;
   font-size: 600%;
   color: #ff4d5a;

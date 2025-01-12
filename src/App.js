@@ -48,6 +48,13 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
+import { SiDjango } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiSpringboot } from "react-icons/si";
+import { FaUnity } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+
 
 
 function App() {
@@ -127,12 +134,14 @@ function App() {
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
         <FaHtml5 className='skillset-icon'/>, "HTML", <FaCss3Alt className='skillset-icon'/>, "CSS", <FaJava className='skillset-icon'/>, "Java",
         <TbBrandCSharp className='skillset-icon'/>, "C#", <SiCplusplus className='skillset-icon'/>, "C++", <SiTypescript className='skillset-icon'/>, "Typescript"
+        , <FaPhp className='skillset-icon'/>, "PHP"
       ]}
       />
       <SkillSection 
         skillsetTitle="Tools"
         skills={[<FaAngular className='skillset-icon'/>, "Angular", <FaReact className='skillset-icon'/>, "React", <FaNodeJs className='skillset-icon'/>, "Node.js",
-        <FaFigma className='skillset-icon'/>, "Figma", <TbSql className='skillset-icon'/>, "SQL", <DiMongodb className='skillset-icon'/>, "MongoDB"
+        <FaFigma className='skillset-icon'/>, "Figma", <TbSql className='skillset-icon'/>, "SQL", <DiMongodb className='skillset-icon'/>, "MongoDB", <SiDjango className='skillset-icon'/>, "Django",
+        <SiFlask className='skillset-icon'/>, "Flask", <TbBrandReactNative className='skillset-icon'/>, "React Native", <SiSpringboot className='skillset-icon'/>, "Spring", <FaUnity className='skillset-icon'/>, "Spring",
       ]}
       />
       <AnimationBubbles/>

@@ -122,13 +122,10 @@ function App() {
       <div className='circle'></div>
       <div className='circle'></div>
       <div className='circle'></div>
-      <div className='circle'></div>
-      <AnimationBubbles/>
       <Home/>
       <AnimationBubbles/>
       <AboutMe/>
-      <h1 id='personal-skills-title'>- Technical skills -</h1>
-      <AnimationBubbles/>
+      <h1 id='personal-skills-title'>Technical skills</h1>
       <SkillSection 
         skillsetTitle="Languages"
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
@@ -144,8 +141,7 @@ function App() {
         <SiFlask className='skillset-icon'/>, "Flask", <TbBrandReactNative className='skillset-icon'/>, "React Native", <SiSpringboot className='skillset-icon'/>, "Spring", <FaUnity className='skillset-icon'/>, "Spring",
       ]}
       />
-      <AnimationBubbles/>
-      <h1 id='projects'>- Projects -</h1>
+      <h1 id='projects'>Projects</h1>
       <div className='portfolio-container'>
         <div>
           <Portfolios
@@ -212,7 +208,6 @@ function App() {
           />
         </div>
       </div>
-      <AnimationBubbles/>
       <ContactPage/>
     </div>
     

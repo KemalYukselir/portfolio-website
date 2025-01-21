@@ -122,12 +122,12 @@ function App() {
       <div className='circle'></div>
       <div className='circle'></div>
       <div className='circle'></div>
+      <div className='circle'></div>
+      <div className='circle'></div>
       <AnimationBubbles/>
       <Home/>
-      <AnimationBubbles/>
       <AboutMe/>
       <h1 id='personal-skills-title'>Technical skills</h1>
-      <AnimationBubbles/>
       <SkillSection 
         skillsetTitle="Languages"
         skills={[<FaPython className='skillset-icon'/>, "Python", <TbBrandJavascript className='skillset-icon'/>, "Javascript",
@@ -144,7 +144,6 @@ function App() {
       ]}
       />
       <h1 id='projects'>Projects</h1>
-      <AnimationBubbles/>
       <div className='portfolio-container'>
         <div>
           <Portfolios
@@ -156,7 +155,6 @@ function App() {
             imgPlaceHolder={[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
           />
         </div>
-        <AnimationBubbles/>
         <div>
           <Portfolios
             projectName="Escape The Ghosts"
@@ -179,7 +177,6 @@ function App() {
             flip={true}
           />
         </div>
-        <AnimationBubbles/>
         <div>
           <Portfolios
             projectName="All That Falafel Website"
@@ -201,7 +198,6 @@ function App() {
             imgPlaceHolder={[finalYearProj1, finalYearProj2, finalYearProj3, finalYearProj4]}
           />
         </div>
-        <AnimationBubbles/>
         <div>
           <Portfolios
             projectName="Smart Plant Pot"
@@ -214,7 +210,6 @@ function App() {
           />
         </div>
       </div>
-      <AnimationBubbles/>
       <ContactPage/>
     </div>
     

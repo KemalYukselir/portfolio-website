@@ -126,6 +126,7 @@ function App() {
       <div className='circle'></div>
       <AnimationBubbles/>
       <Home/>
+      <h1>About me</h1>
       <AboutMe/>
       <h1 id='personal-skills-title'>Technical skills</h1>
       <SkillSection 
@@ -210,6 +211,7 @@ function App() {
           />
         </div>
       </div>
+      <h1 id="contacts">Personal Information</h1>
       <ContactPage/>
     </div>
     

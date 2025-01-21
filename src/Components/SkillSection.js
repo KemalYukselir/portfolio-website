@@ -14,7 +14,7 @@ const SkillSection = ({ skillsetTitle, skills }) => {
   return (
     <div className='skills-container'>
       <div className='skills-section'>
-        <h1>{skillsetTitle}</h1>
+        <h2>{skillsetTitle}</h2>
         <div className='language-logos-container'>
           {renderedSkills}
         </div>

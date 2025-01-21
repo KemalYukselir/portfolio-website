@@ -51,7 +51,7 @@ const Portfolios = ({
         marginBottom: '10%',
         transition: 'transform 0.3s', // Add transition for smooth scaling
         '&:hover': {
-          transform: 'scale(1.2)', // Scale up when hovered
+          transform: 'scale(1.1)', // Scale up when hovered
         },
       }}>
       <CardMedia
@@ -106,8 +106,6 @@ const Portfolios = ({
             </Button>
           )}
         </CardActions>
-
-
       </Card>
     </div>
   );

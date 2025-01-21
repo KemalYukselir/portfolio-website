@@ -31,10 +31,10 @@ const Home = () => {
       <Navigation />
       <div className="home-section">
           <div className='home-heading-section'>
-            <h1 id="primary-heading">
+            <h2 id="primary-heading">
               Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
-            </h1>
-            <h2>I enjoy solving problems and bringing ideas to life</h2>
+            </h2>
+            <h3>I enjoy solving problems and bringing ideas to life</h3>
             <div className='buttons'>
               <button onClick={scrollToProjects} className="scroll-button"><span>My Projects</span><FaArrowDown className="navBar-icon"/></button>
               <button onClick={scrollToContacts} className="scroll-button"><span>Contact me</span><FaArrowDown className="navBar-icon"/></button>  

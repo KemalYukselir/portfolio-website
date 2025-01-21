@@ -1,5 +1,4 @@
 * {
-  font-family: "Reem Kufi", sans-serif;
   margin: 0;
 }
 img {
@@ -19,14 +18,33 @@ body {
 }
 
 h1 {
-  display: flex;
+  position: relative;
+  display: inline-block; /* Makes width match text content */
   justify-content: center;
   align-items: center; 
   text-align: center; 
   font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
+  font-weight: 550;
   font-style: normal;
-  font-size: 400%;
+  font-size: 500%;
+  color: beige;
+  width: 100%;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20%; /* Match width of the text */
+  transform: translateX(-90%) translateY(-50%); /* Center-align the box */
+  height: 15px; /* Adjust height */
+  background-color: #ff4d5a; /* Red color for the box */
+  z-index: -1; /* Keep it behind the text */
+}
+
+h3 {
+  display: flex;
+  width: 95%;
   color: beige;
 }
 
@@ -294,18 +312,25 @@ nav {
   background-color: transparent;
 }
 
-.aboutme-section-top p {
-  color: beige;
-  font-weight: 300;
-  font-size: 120%;
-  margin-top: 2%;
-  max-width: 1000px !important;
-}
-.aboutme-section-top h1 {
+/* .aboutme-section-top h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 600%;
   color: #ff4d5a;
+} */
+
+.aboutme-section-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+
+.aboutme-section-bottom p {
+  color: beige;
+  font-weight: 300;
+  font-size: 120%;
+  margin-top: 2%;
+  max-width: 90% !important;
 }
 
 
@@ -314,15 +339,9 @@ nav {
   /* -------- Skillset Section */
   /* -------- Skillset Section */
 
-  #personal-skills-title {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 550%;
-    color: #ff4d5a;  
-  }
-
 .skills-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
@@ -337,13 +356,13 @@ nav {
   width: 75%;
 }
 
-.skills-section h1 {
+.skills-section h2 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 5%;
-  font-size: 350%;
-  color: beige;
+  font-size: 300%;
+  color: #ff4d5a;
 }
 
 .language-logos-container {
@@ -399,14 +418,6 @@ nav {
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
 
-  #projects {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 600%;
-    color: #ff4d5a;
-    margin-bottom: 5%;
-  }
-
 .portfolio-section {
   flex: 1;
   display: flex;
@@ -414,7 +425,7 @@ nav {
   justify-content: center;
   align-items: center; 
   text-align: center; 
-  max-height: 90vh; 
+  min-height: 100vh; 
 }
 
 .portfolio-section Button{
@@ -536,6 +547,11 @@ nav {
     font-size: 300%;
   }
 
+  h1::after {
+    width: 40%; /* Match width of the text */
+    transform: translateX(-90%) translateY(-10%); /* Center-align the box */
+  }
+
   .navbar-menu-container {
     display: flex;
     width: 100%;
@@ -578,7 +594,7 @@ nav {
 
   .home-heading-section h2 {
     font-weight: 550;
-    font-size: 15px;
+    font-size: 45px;
   }
 
   .home-heading-section .buttons {
@@ -630,8 +646,8 @@ nav {
     width: 50%;
   }
 
-  .skills-section h1 {
-    font-size: 250%;
+  .skills-section h2 {
+    font-size: 200%;
   }
 
   .language-logos-container {
@@ -648,14 +664,9 @@ nav {
   /* -------- Portfolio Section */
   /* -------- Portfolio Section */
 
-  #projects {
-    margin-bottom: 15%;
-    font-weight: 550;
-    font-size: 400%;
-  }
-
   .portfolio-section {
     max-width: 90vw; 
+    min-height: 75vh;
   }
 
 
@@ -682,6 +693,8 @@ nav {
 
   .work-section-top p {
     font-size: 100%;
+    display: flex;
+    width: 90%;
   }
   
   .work-section-top h1 {

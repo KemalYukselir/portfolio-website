@@ -5,7 +5,6 @@ const AboutMe = () => {
   return (
     <div className="aboutme-section-wrapper">
       <div className="aboutme-section-top">
-        <h1>About me</h1>
         <div className='about-me-logo'>
           <IoPersonCircleOutline/>
         </div>

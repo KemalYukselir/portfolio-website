@@ -44,7 +44,6 @@ h1::after {
 
 h3 {
   display: flex;
-  width: 95%;
   color: beige;
 }
 
@@ -272,15 +271,11 @@ nav {
   border-color: #ff4d5a; /* Keeps border color consistent on hover */
 }
 
-.home-heading-section button span{
-  padding-right: 5%;
-}
-
 .home-section #primary-text {
   font-size: 20px;
   color: beige;
-  
 }
+
 .home-section p {
   margin-top: 3%;
 }
@@ -550,6 +545,10 @@ nav {
   h1::after {
     width: 40%; /* Match width of the text */
     transform: translateX(-90%) translateY(-10%); /* Center-align the box */
+  }
+
+  h3 {
+    width: 95%;
   }
 
   .navbar-menu-container {

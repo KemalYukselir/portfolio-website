@@ -31,7 +31,7 @@ const Home = () => {
       <Navigation />
       <div className="home-section">
           <div className='home-heading-section'>
-            <h2 id="primary-heading">
+            <h2 data-text="Hello, I'm Kemal">
               Hello, I'm&nbsp;<span style={{ color: '#ff4d5a' }}>Kemal</span>.
             </h2>
             <h3>I enjoy solving problems and bringing ideas to life</h3>

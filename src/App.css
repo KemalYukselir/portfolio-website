@@ -247,10 +247,39 @@ nav {
 }
 
 .home-heading-section h2 {
+  position: relative;
   font-weight: 550;
   font-style: normal;
   font-size: 50px;
   color: beige;
+}
+
+.home-heading-section h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; /* Start hidden */
+  height: 100%;
+  color: #d0a65a; /* New text color as highlight passes */
+  -webkit-text-stroke: 0px #095b45; /* Remove outline from overlay text */
+  border-right: 2px solid #d0a65a; /* Typing cursor effect */
+  overflow: hidden;
+  white-space: nowrap; /* Ensures text remains in one line */
+  animation: highlight 7s linear infinite; /* Runs animation */
+}
+
+/* Animation to Sweep Through the Text */
+@keyframes highlight {
+  0% {
+      width: 0%;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0%;
+  }
 }
 
 .home-heading-section button {

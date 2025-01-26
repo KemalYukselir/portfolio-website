@@ -61,7 +61,7 @@ const Portfolios = ({
           alignItems: 'center',
           justifyContent: 'center', 
           height: 220,
-          backgroundColor: 'black',
+          backgroundColor: 'white',
         }}
       >
         <img

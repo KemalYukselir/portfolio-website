@@ -27,10 +27,10 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
-import allthatcafeImg1 from "./Assets/allthatcafeImg1.png";
-import allthatcafeImg2 from "./Assets/allthatcafeImg2.png";
-import allthatcafeImg3 from "./Assets/allthatcafeImg3.png";
-import allthatcafeImg4 from "./Assets/allthatcafeImg4.png";
+import AllThatFalafelMore from "./Assets/AllThatFalafelMore.png";
+import AllThatFalafelMore2 from "./Assets/AllThatFalafelMore2.png";
+import AllThatFalafelMore3 from "./Assets/AllThatFalafelMore3.png";
+
 
 import workInProgress from "./Assets/workInProgress.png";
 
@@ -169,12 +169,12 @@ function App() {
         </div>
         <div>
           <Portfolios
-            projectName="All That Cafe Website"
+            projectName="AllThatFalafel & More Website"
             gameStack="React, Visual Studio Code, Figma"
             githubLink={null}
-            projectInformation="Website for All That Cafe store based in London Southwark. All That Cafe serves breakfast brunch and more. This website is complete with mobile version currently in progress"
-            deploymentLink="https://allthatcafe.netlify.app/"
-            imgPlaceHolder={[allthatcafeImg2,allthatcafeImg1,allthatcafeImg3,allthatcafeImg4]}
+            projectInformation="Website for AllThatFalafel & More store based in London Southwark. AllThatFalafel & More serves brunch and more. This website is complete with mobile compatibility"
+            deploymentLink="https://allthatfalafelmore.org/"
+            imgPlaceHolder={[AllThatFalafelMore, AllThatFalafelMore2, AllThatFalafelMore3]}
             flip={true}
           />
         </div>

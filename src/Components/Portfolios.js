@@ -44,7 +44,7 @@ const Portfolios = ({
   return (
     <div className='portfolio-section'>
       <Card sx={{ 
-        width: '400px',
+        width: '550px',
         marginRight: '2.5%', 
         marginLeft: '2.5%',
         height: 'auto', 

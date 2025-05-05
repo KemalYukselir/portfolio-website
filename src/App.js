@@ -213,7 +213,6 @@ function App() {
           />
         </div>
       </div>
-      <h2> Check out my GitHub</h2>
       <h1 id="contacts">Personal Information</h1>
       <ContactPage/>
     </div>

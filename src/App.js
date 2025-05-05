@@ -31,8 +31,10 @@ import AllThatFalafelMore from "./Assets/AllThatFalafelMore.png";
 import AllThatFalafelMore2 from "./Assets/AllThatFalafelMore2.png";
 import AllThatFalafelMore3 from "./Assets/AllThatFalafelMore3.png";
 
-
-import workInProgress from "./Assets/workInProgress.png";
+import studentcertify1 from "./Assets/studentcertify1.png";
+import studentcertify2 from "./Assets/studentcertify2.png";
+import studentcertify3 from "./Assets/studentcertify3.png";
+import studentcertify4 from "./Assets/studentcertify4.png";
 
 import { FaPython } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -144,9 +146,20 @@ function App() {
         <SiFlask className='skillset-icon'/>, "Flask", <TbBrandReactNative className='skillset-icon'/>, "React Native", <SiSpringboot className='skillset-icon'/>, "Spring", <FaUnity className='skillset-icon'/>, "Spring",
       ]}
       />
-      <h1 id='projects'>Projects</h1>
+      <h1 id='projects'>Latest Projects</h1>
       <div className='portfolio-container'>
-        <div>
+      <div>
+          <Portfolios
+            projectName="Student Certification Rate Predictor"
+            gameStack="Streamlit, Python and Visual Studio Code"
+            githubLink="https://github.com/KemalYukselir/student-certify-rate"
+            projectInformation="This project is a Streamlit-powered project that predicts online course certification rates using a linear regression model trained on historical data from Harvard and MIT. It includes interactive insights, ethical considerations, and a live predictor based on user-inputted course details."
+            deploymentLink={"https://student-certify-rate.streamlit.app/"}
+            imgPlaceHolder={[studentcertify1,studentcertify2,studentcertify3,studentcertify4]}
+            flip={true}
+          />
+        </div>
+        {/* <div>
           <Portfolios
             projectName="Mafia Game"
             gameStack="React Native, Node.js, Visual Studio Code, Figma"
@@ -155,7 +168,7 @@ function App() {
             deploymentLink="https://themafiagame.netlify.app/"
             imgPlaceHolder={[MafiaGameImg1, MafiaGameImg2, MafiaGameImg3, MafiaGameImg4]}
           />
-        </div>
+        </div> */}
         <div>
           <Portfolios
             projectName="Escape The Ghosts"
@@ -167,7 +180,7 @@ function App() {
             flip={true}
           />
         </div>
-        <div>
+        {/* <div>
           <Portfolios
             projectName="AllThatFalafel & More Website"
             gameStack="React, Visual Studio Code, Figma"
@@ -177,18 +190,7 @@ function App() {
             imgPlaceHolder={[AllThatFalafelMore, AllThatFalafelMore2, AllThatFalafelMore3]}
             flip={true}
           />
-        </div>
-        <div>
-          <Portfolios
-            projectName="All That Falafel Website"
-            gameStack="React, Visual Studio Code, Figma"
-            githubLink=""
-            projectInformation="Website for All That Falafel store based in London (Multiple Locations). All That Cafe falafel serves the best vegan wraps and meals. This website is currently in progress and will be made public soon"
-            deploymentLink={null}
-            imgPlaceHolder={[workInProgress]}
-            flip={true}
-          />
-        </div>
+        </div> */}
         <div>
           <Portfolios
             projectName="CyberTrace"
@@ -211,6 +213,7 @@ function App() {
           />
         </div>
       </div>
+      <h2> Check out my GitHub</h2>
       <h1 id="contacts">Personal Information</h1>
       <ContactPage/>
     </div>

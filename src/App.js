@@ -7,10 +7,10 @@ import AnimationBubbles from './Components/AnimationBubbles';
 import SkillSection from './Components/SkillSection';
 import AboutMe from './Components/AboutMe';
 
-import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
-import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
-import MafiaGameImg3 from "./Assets/mafiaGameImg3.png";
-import MafiaGameImg4 from "./Assets/mafiaGameImg4.png";
+// import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
+// import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
+// import MafiaGameImg3 from "./Assets/mafiaGameImg3.png";
+// import MafiaGameImg4 from "./Assets/mafiaGameImg4.png";
 
 import escapeTheGhosts1 from "./Assets/escapeTheGhosts1.png";
 import escapeTheGhosts2 from "./Assets/escapeTheGhosts2.png";
@@ -27,9 +27,9 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
-import AllThatFalafelMore from "./Assets/AllThatFalafelMore.png";
-import AllThatFalafelMore2 from "./Assets/AllThatFalafelMore2.png";
-import AllThatFalafelMore3 from "./Assets/AllThatFalafelMore3.png";
+// import AllThatFalafelMore from "./Assets/AllThatFalafelMore.png";
+// import AllThatFalafelMore2 from "./Assets/AllThatFalafelMore2.png";
+// import AllThatFalafelMore3 from "./Assets/AllThatFalafelMore3.png";
 
 import studentcertify1 from "./Assets/studentcertify1.png";
 import studentcertify2 from "./Assets/studentcertify2.png";

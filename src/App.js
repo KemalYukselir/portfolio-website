@@ -29,11 +29,11 @@ import RemoteBurnout4 from "./Assets/RemoteBurnout4.png";
 import RemoteBurnout5 from "./Assets/RemoteBurnout5.png";
 import RemoteBurnout6 from "./Assets/RemoteBurnout6.png";
 
-// import StudentCertify1 from "./Assets/StudentCertify1.png";
-import StudentCertify2 from "./Assets/StudentCertify2.png";
-import StudentCertify3 from "./Assets/StudentCertify3.png";
-import StudentCertify4 from "./Assets/StudentCertify4.png";
-import StudentCertify5 from "./Assets/StudentCertify5.png";
+import student1 from "./Assets/student1.png";
+import student2 from "./Assets/student2.png";
+import student3 from "./Assets/student3.png";
+import student4 from "./Assets/student4.png";
+import student5 from "./Assets/student5.png";
 
 
 import WHO1 from "./Assets/WHO1.png";
@@ -175,7 +175,7 @@ function App() {
             githubLink="https://github.com/KemalYukselir/student-certify-rate"
             projectInformation="This project is a Streamlit-powered project that predicts online course certification rates using a linear regression model trained on historical data from Harvard and MIT. It includes interactive insights, ethical considerations, and a live predictor based on user-inputted course details."
             deploymentLink={"https://huggingface.co/spaces/Kemzo/Student-certify-rate"}
-            imgPlaceHolder={[StudentCertify2,StudentCertify3,StudentCertify4,StudentCertify5]}
+            imgPlaceHolder={[student1,student2,student3,student4,student5]}
             flip={true}
           />
         </div>

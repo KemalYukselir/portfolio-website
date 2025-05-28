@@ -7,11 +7,6 @@ import AnimationBubbles from './Components/AnimationBubbles';
 import SkillSection from './Components/SkillSection';
 import AboutMe from './Components/AboutMe';
 
-// import MafiaGameImg1 from "./Assets/mafiaGameImg1.png";
-// import MafiaGameImg2 from "./Assets/mafiaGameImg2.png";
-// import MafiaGameImg3 from "./Assets/mafiaGameImg3.png";
-// import MafiaGameImg4 from "./Assets/mafiaGameImg4.png";
-
 import escapeTheGhosts1 from "./Assets/escapeTheGhosts1.png";
 import escapeTheGhosts2 from "./Assets/escapeTheGhosts2.png";
 import escapeTheGhosts3 from "./Assets/escapeTheGhosts3.png";
@@ -27,14 +22,28 @@ import plantPot2 from "./Assets/plantPot2.png";
 import plantPot3 from "./Assets/plantPot3.png";
 import plantPot4 from "./Assets/plantPot4.png";
 
-// import AllThatFalafelMore from "./Assets/AllThatFalafelMore.png";
-// import AllThatFalafelMore2 from "./Assets/AllThatFalafelMore2.png";
-// import AllThatFalafelMore3 from "./Assets/AllThatFalafelMore3.png";
+import RemoteBurnout1 from "./Assets/RemoteBurnout1.png";
+import RemoteBurnout2 from "./Assets/RemoteBurnout2.png";
+import RemoteBurnout3 from "./Assets/RemoteBurnout3.png";
+import RemoteBurnout4 from "./Assets/RemoteBurnout4.png";
+import RemoteBurnout5 from "./Assets/RemoteBurnout5.png";
+import RemoteBurnout6 from "./Assets/RemoteBurnout6.png";
 
-import studentcertify1 from "./Assets/studentcertify1.png";
-import studentcertify2 from "./Assets/studentcertify2.png";
-import studentcertify3 from "./Assets/studentcertify3.png";
-import studentcertify4 from "./Assets/studentcertify4.png";
+import StudentCertify1 from "./Assets/StudentCertify1.png";
+import StudentCertify2 from "./Assets/StudentCertify2.png";
+import StudentCertify3 from "./Assets/StudentCertify3.png";
+import StudentCertify4 from "./Assets/StudentCertify4.png";
+import StudentCertify5 from "./Assets/StudentCertify5.png";
+
+
+import WHO1 from "./Assets/WHO1.png";
+import WHO2 from "./Assets/WHO2.png";
+import WHO3 from "./Assets/WHO3.png";
+import WHO4 from "./Assets/WHO4.png";
+import WHO5 from "./Assets/WHO5.png";
+import WHO6 from "./Assets/WHO6.png";
+import WHO7 from "./Assets/WHO7.png";
+
 
 import { FaPython } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -148,14 +157,36 @@ function App() {
       />
       <h1 id='projects'>Latest Projects</h1>
       <div className='portfolio-container'>
-      <div>
+        <div>
           <Portfolios
-            projectName="Student Certification Rate Predictor"
+            projectName="Remote Working Burnout Analysis"
+            gameStack="Streamlit, Python and Visual Studio Code"
+            githubLink="https://github.com/KemalYukselir/Remote-Workers-Analysis"
+            projectInformation="Built a Streamlit web app to explore burnout among remote workers using survey data from OSMI. Developed a predictive model with XGBoost, and created an interactive dashboard with Tableau to present key insights. The project also includes a live predictor and a dedicated page outlining ethical considerations and responsible use."
+            deploymentLink={"https://huggingface.co/spaces/Kemzo/Remote-worker-analysis"}
+            imgPlaceHolder={[RemoteBurnout1,RemoteBurnout2,RemoteBurnout3,RemoteBurnout4,RemoteBurnout5,RemoteBurnout6]}
+            flip={true}
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="Student Certification Rate Analysis"
             gameStack="Streamlit, Python and Visual Studio Code"
             githubLink="https://github.com/KemalYukselir/student-certify-rate"
             projectInformation="This project is a Streamlit-powered project that predicts online course certification rates using a linear regression model trained on historical data from Harvard and MIT. It includes interactive insights, ethical considerations, and a live predictor based on user-inputted course details."
-            deploymentLink={"https://student-certify-rate.streamlit.app/"}
-            imgPlaceHolder={[studentcertify1,studentcertify2,studentcertify3,studentcertify4]}
+            deploymentLink={"https://huggingface.co/spaces/Kemzo/Student-certify-rate"}
+            imgPlaceHolder={[StudentCertify1,StudentCertify2,StudentCertify3,StudentCertify4,StudentCertify5]}
+            flip={true}
+          />
+        </div>
+        <div>
+          <Portfolios
+            projectName="WHO Life Expectancy Model"
+            gameStack="Streamlit, Python Notebook and Visual Studio Code"
+            githubLink="https://github.com/KemalYukselir/WHO-Life-Expectancy"
+            projectInformation="Explored life expectancy data from the World Health Organization and built two linear regression models — one using all available features and another excluding sensitive data to assess the impact on fairness and accuracy. Carried out data cleaning, one-hot encoding, log transformations, and multicollinearity checks using VIF. Used Python and Statsmodels to train and evaluate the models, achieving an R² of 0.96 and a test RMSE of ~2.15. Strengthened skills in ethical modelling, data preparation, and producing interpretable results."
+            deploymentLink={""}
+            imgPlaceHolder={[WHO1,WHO2,WHO3,WHO4,WHO5,WHO6,WHO7]}
             flip={true}
           />
         </div>
